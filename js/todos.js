@@ -51,3 +51,13 @@ function redirectTo(url){
 // 	Share on Facebook.......................................................NATY IDO
 // 	Allow switching the UI to hebrew........................................NATY WIP
 // 	Animations: When hovering an image zoom-in..............................TODO DONE
+
+//download
+// upload
+// controller/MVC
+// responsivit
+//
+// **brush
+// **FB
+// **contact
+// **i18n
