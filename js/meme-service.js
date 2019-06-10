@@ -19,7 +19,7 @@ function searchGifImages(userSearch) {
         .then((resp) => resp.json()
             .then(function (data) {
                 for (let i = 0; i < gRequest; i++) {
-                    gGifImages.push(data.data[i].images.downsized.url)
+                    gGifImages.push(data.data[i].images.fixed_height.url)
                 }
                 saveToStorage('gifs', gGifImages);
                 renderGrid(gGifImages);

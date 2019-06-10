@@ -27,7 +27,7 @@ blockquote, q {
     quotes: none;
 }
 
-header h1 {
+.header h1 {
     font-size: 4.0rem;
     animation: slide-up2 1s ease;
 }
@@ -582,7 +582,7 @@ div > img {
 }
 
 @media screen and (max-width: 745px) {
-    header h1 {
+    .header h1 {
         font-size: 1.5rem;
     }
 

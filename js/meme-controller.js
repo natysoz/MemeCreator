@@ -35,8 +35,8 @@ function canvasSetup() {
         canvas.height = 325;
     }
     else {
-        canvas.width = 500;
-        canvas.height = 600;
+        canvas.width = 400;
+        canvas.height = 500;
     }
     image = document.querySelector('#background');
     backgroundImage = document.querySelector('#background');
@@ -47,10 +47,6 @@ function canvasSetup() {
     gSelectedSize = '40';
     gSelectedItem = appData.props[1];
 }
-
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
 
 
 function renderCanvas() {
@@ -64,7 +60,6 @@ function renderCanvas() {
 }
 
 //RENDERS
-
 function renderCanvasProps() {
     //TODO Render with ForEach
     appData.props.forEach(item => {
@@ -156,8 +151,6 @@ function onItemSelect(x, y) {
         sliderValue.value = gSelectedItem.size;
     } else sliderValue.value = 60;
 }
-
-
 
 function onSliderScale() {
     let sliderValue = document.querySelector(".slider");
@@ -325,19 +318,19 @@ function setMouseListeners() {
     };
 }
 
-function onmoveLineLeftClick() {
+function onTextLeftClick() {
     gSelectedItem.x = gSelectedItem.x - 5;
 }
 
-function onmoveLineRightClick() {
+function onTextRightClick() {
     gSelectedItem.x = gSelectedItem.x + 5;
 }
 
-function onmoveLineUpClick() {
+function onTextUpClick() {
     gSelectedItem.y = gSelectedItem.y - 5;
 }
 
-function onmoveLineDownClick() {
+function onTextDownClick() {
     gSelectedItem.y = gSelectedItem.y + 5;
 }
 
@@ -345,19 +338,19 @@ function keyHandler(key) {
     if (!gSelectedItem) return;
     switch (key) {
         case "ArrowUp":
-            onmoveLineUpClick();
+            onTextUpClick();
             break;
 
         case "ArrowDown":
-            onmoveLineDownClick();
+            onTextDownClick();
             break;
 
         case "ArrowRight":
-            onmoveLineRightClick();
+            onTextRightClick();
             break;
 
         case "ArrowLeft":
-            onmoveLineLeftClick();
+            onTextLeftClick();
             break;
     }
 }
@@ -407,6 +400,9 @@ function downloadCanvas(elLink) {
     elLink.href = imgContent;
 }
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 function uploadToCanvas(ev) {
     handleImageFromInput(ev, onImageUpload)
