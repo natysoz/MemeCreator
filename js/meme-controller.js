@@ -127,6 +127,7 @@ function renderBackgroundImage(img, ctx) {
 
 //CANVAS TOOLS
 function onItemSelect(x, y) {
+    let sliderValue = document.querySelector(".slider");
     let currItem = appData.props.find(prop => {
         if (prop.src) {
             return (x >= prop.x && x <= prop.x + prop.size && y >= prop.y && y <= prop.y + prop.size)
@@ -137,16 +138,22 @@ function onItemSelect(x, y) {
         }
     });
     if (!currItem) {
-        gSelectedItem = null; 
+        gSelectedItem = null;
         onInputFinish();
         return;
     }
+
     isDraggable = true;
     gSelectedItem = currItem;
     updateTextField(currItem.line);
     console.log('Selected is:', gSelectedItem);
 
+    if (!gSelectedItem.src) {
+        sliderValue.value = gSelectedItem.size;
+    } else sliderValue.value = 60;
 }
+
+
 
 function onSliderScale() {
     let sliderValue = document.querySelector(".slider");
@@ -401,3 +408,24 @@ function downloadCanvas(elLink) {
     elLink.href = imgContent;
 }
 
+
+function uploadToCanvas(ev) {
+    handleImageFromInput(ev, onImageUpload)
+}
+
+function handleImageFromInput(ev, onImageReady) {
+   // document.querySelector('.share-container').innerHTML = ''
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        var img = new Image();
+        img.onload = onImageReady.bind(null, img)
+        img.src = event.target.result;
+    }
+    reader.readAsDataURL(ev.target.files[0]);
+}
+
+
+function onImageUpload(img) {
+image = img;
+}

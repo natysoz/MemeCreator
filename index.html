@@ -21,9 +21,9 @@
 
     <div class="top-navbar">
         <div class="back" onclick="onToggleEditMode()"><i class="fas fa-arrow-left"></i></div>
-        <div onclick="uploadToCanvas()"><i class="fa fa-upload" aria-hidden="true"></i></div>
+        <div onclick="uploadToCanvas(event)"><i class="fa fa-upload" aria-hidden="true"></i></div>
 
-        <input type="file" name="image" onchange="onFileInputChange(event)" />
+        <input type="file" name="image" onchange="uploadToCanvas(event)" />
 
         <a href="#" onclick="downloadCanvas(this)" download="my-img.jpg" class="fa fa-download" aria-hidden="true" ></a>
     </div>
@@ -41,7 +41,7 @@
     </div>
     <div class="slide-container">
         <div class="slider-a-small">A</div>
-        <input oninput="onSliderScale()" type="range" min="20" max="100" value="50" class="slider" id="myRange">
+        <input oninput="onSliderScale()" type="range" min="20" max="100" value="30" class="slider" id="myRange">
         <div class="slider-a-big">A</div>
     </div>
 
@@ -82,8 +82,8 @@
 
         <nav class="navbar-fonts fonts-menu hide-modal">
             <div  class="roboto"  onclick="onFontChange(this)">Broadway</div>
-            <div  class="arial"   onclick="onFontChange(this)">Gotham</div>
-            <div  class="arimo"   onclick="onFontChange(this)">Arimo</div>
+            <div  class="arial"   onclick="onFontChange(this)">Arial</div>
+            <div  class="arimo"   onclick="onFontChange(this)">Lato</div>
             <div  class="impact"  onclick="onFontChange(this)">Impact</div>
         </nav>
     </section>
@@ -109,7 +109,7 @@
 <h2>Popular search terms</h2>
 
 <section class="keywords flex row space warp">
-    <div class="keyword">Keyword</div>
+    <div class="keyword">dragon ball</div>
     <div class="keyword">Keyword</div>
     <div class="keyword">Keyword</div>
     <div class="keyword">Keyword</div>
@@ -122,11 +122,13 @@
 </section>
 <div class="flex results hide">No Results</div>
 
+<div id="fb-root"></div>
+<div class="share-container"></div>
+
 
 <script src="lib/picker.js" type="text/javascript"></script>
 <script src="js/meme-util-service.js" type="text/javascript"></script>
 <script src="js/meme-render-service.js" type="text/javascript"></script>
-<script src="js/meme-i18n-service.js" type="text/javascript"></script>
 <script src="js/meme-service.js" type="text/javascript"></script>
 <script src="js/meme-controller.js" type="text/javascript"></script>
 

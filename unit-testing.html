@@ -1,37 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memes Generator</title>
+    
 </head>
 
-<body  style="background-color: #2c2c2c" onload="onInit()">
+<body onload="init()">
 
-<img style="display: none;" id="background" src="200.gif">
-<img style="display: none;" id="userImage" src="1.png">
-<img style="display: none;" id="userImage2" src="2.png">
+    
+  <!-- <form action="" method="POST" enctype="multipart/form-data" onsubmit="uploadImg(this, event)">
+    <input name="img" id="imgData" type="hidden"/>
+    <button type="submit">Publish</button>
+  </form> -->
 
-<canvas style="border: 2px dotted white; background-color: black" class="meme-canvas" id="canvas" width="400" height="500">Not Supported</canvas>
+  <hr>
+  <br>
+  <canvas id="myCanvas" width="400" height="400" style="outline:1px solid green"></canvas>
+  
+  <br>
+  <a href="#" onclick="downloadImg(this)" download="my-img.jpg" >
+    Download as jpeg
+  </a>
+  
+  <br>
+  <input type="file" name="image" onchange="onFileInputChange(event)" />
 
+  <div id="fb-root"></div>
+  <div class="share-container"></div>
 
-<div class="slidecontainer">
-    <input oninput="onSliderScale()" type="range" min="20" max="85" value="40" class="slider" id="myRange">
-</div>
+  <script src="js/unit-test.js"></script>
 
-<nav class="main-navbar-symbols props-menu hide-modal" style="display: flex; flex-direction: row">
-    <div onclick="onPropAdd(this)"><img src="source/props/glass.gif"></div>
-    <div onclick="onPropAdd(this)"><img src="source/props/glass01.gif"></div>
-    <div onclick="onPropAdd(this)"><img src="source/props/kiss.gif"></div>
-    <div onclick="onPropAdd(this)"><img src="source/props/mask.gif"></div>
-    <div onclick="onPropAdd(this)"><img src="source/props/pap.gif"></div>
-</nav>
-
-
-<script src="js/meme-util-service.js"></script>
-<script src="js/unit-test.js"></script>
-
-
+ 
 </body>
+
 </html>
