@@ -5,7 +5,6 @@ let image;
 let backgroundImage;
 let ctx;
 let isDraggable = false;
-let isText = true; // change to selecteDitem.src
 
 //Application Global Vars
 let gSelectedItem;
@@ -24,7 +23,7 @@ let appData = getAppData();
 //     fjs.parentNode.insertBefore(js, fjs);
 //   }(document, 'script', 'facebook-jssdk'));
 
-function getAppData(){
+function getAppData() {
     return data;
 }
 
@@ -49,8 +48,6 @@ function canvasSetup() {
     gSelectedItem = appData.props[1];
 }
 
-
-
 function renderCanvas() {
     window.requestAnimationFrame(() => {
         renderBackgroundImage(image, ctx);
@@ -72,10 +69,10 @@ function renderCanvasProps() {
             renderText(item, item.x, item.y);
         }
     });
-    if (isDraggable && !isText) {
+    if (isDraggable && !gSelectedItem.src) {
         renderOutline();
     }
-    if (isDraggable && isText) {
+    if (isDraggable && gSelectedItem.src) {
         renderOutlineText();
     }
 }
@@ -131,16 +128,18 @@ function renderBackgroundImage(img, ctx) {
 function onItemSelect(x, y) {
     let currItem = appData.props.find(prop => {
         if (prop.src) {
-            isText = false;
             return (x >= prop.x && x <= prop.x + prop.size && y >= prop.y && y <= prop.y + prop.size)
         } else {
-            isText = true;
             return (y < prop.y && y > (prop.y - prop.size)) &&
                 (x > prop.x && x < (prop.x + prop.line.length * (prop.size)) ||
                     (x < prop.x && x > (prop.x - prop.line.length * prop.size)))
         }
     });
-    if (!currItem) { gSelectedItem = null; return };
+    if (!currItem) {
+        gSelectedItem = null; 
+        onInputFinish();
+        return;
+    }
     isDraggable = true;
     gSelectedItem = currItem;
     updateTextField(currItem.line);
@@ -153,7 +152,7 @@ function onSliderScale() {
     if (!gSelectedItem) return;
     if (gSelectedItem.src) {
         gSelectedItem.size = sliderValue.value * 2.67;
-    } else gSelectedItem.size = sliderValue.value;    
+    } else gSelectedItem.size = sliderValue.value;
 }
 
 function onColorChange() {
@@ -191,7 +190,7 @@ function onTextAdd(text) {
     if (gIsEditing) {
         gIsEditing = false;
         gSelectedItem = null;
-        cleanFields();
+        onInputFinish();
         checkEditToggle();
         return;
     }
@@ -206,7 +205,7 @@ function onTextAdd(text) {
 }
 
 function onPropAdd(prop) {
-    var name = prop.getAttribute('data-name'); // fruitCount = '12'
+    var name = prop.getAttribute('data-name');
     propAdd(name, prop.firstChild);
     onPropsMenu();
 }
@@ -220,7 +219,6 @@ function onPropDelete() {
     gSelectedItem = null;
 }
 
-//SERVICE
 function propAdd(name, src) {
     appData.props.push(
         {
@@ -239,8 +237,6 @@ function updateTextField(txt) {
     var eInput = document.querySelector('.text-input');
     eInput.value = txt;
     eInput.style.color = gSelectedColor;
-
-
 }
 
 function onTextEditing(input) {
@@ -317,6 +313,43 @@ function setMouseListeners() {
     };
 }
 
+function onmoveLineLeftClick() {
+    gSelectedItem.x = gSelectedItem.x - 5;
+}
+
+function onmoveLineRightClick() {
+    gSelectedItem.x = gSelectedItem.x + 5;
+}
+
+function onmoveLineUpClick() {
+    gSelectedItem.y = gSelectedItem.y - 5;
+}
+
+function onmoveLineDownClick() {
+    gSelectedItem.y = gSelectedItem.y + 5;
+}
+
+function keyHandler(key) {
+    if (!gSelectedItem) return;
+    switch (key) {
+        case "ArrowUp":
+            onmoveLineUpClick();
+            break;
+
+        case "ArrowDown":
+            onmoveLineDownClick();
+            break;
+
+        case "ArrowRight":
+            onmoveLineRightClick();
+            break;
+
+        case "ArrowLeft":
+            onmoveLineLeftClick();
+            break;
+    }
+}
+
 //Buttons Functions
 function onSelectImage(elGifSelect) {
     image.src = elGifSelect;
@@ -333,7 +366,7 @@ function onFontsMenu() {
     symbolsMenu.classList.toggle('hide-modal');
 }
 
-function onSearchSubmit(ev, searchTerm = '') {
+function onSearchSubmit(ev) {
     ev.preventDefault();
     let userSearch = document.querySelector('.input-box');
     searchGifImages(userSearch.value);
@@ -348,12 +381,11 @@ function onToggleEditMode() {
     document.querySelector('body').classList.toggle('edit-mode');
 }
 
-
-
-// TODO MORE FEATURES
-function cleanFields() {
+function onInputFinish() {
     document.querySelector('.text-input').value = '';
 }
+
+// TODO MORE FEATURES
 
 function onLoadMoreGifs() {
     //TODO:  create andother function that will Not clear , but Append to the curr Array
@@ -363,10 +395,11 @@ function onLangSelect(elLangSelect) {
     // TODO: Let the user Select Language , then send to Service to save the Lang
 }
 
-// TODO functions to push into SERVICE >>
-
-
 function downloadCanvas(elLink) {
+    gSelectedItem = null;
+    renderBackgroundImage(image, ctx);
+    renderCanvasProps();
+
     var imgContent = canvas.toDataURL('image/jpeg');
     elLink.href = imgContent;
 }
@@ -395,7 +428,7 @@ function downloadCanvas(elLink) {
 //     ev.preventDefault();
 
 //     document.getElementById('imgData').value = canvas.toDataURL("image/jpeg");
-   
+
 //     // A function to be called if request succeeds
 //     function onSuccess(uploadedImgUrl) {
 //         console.log('uploadedImgUrl', uploadedImgUrl);
@@ -438,39 +471,3 @@ function downloadCanvas(elLink) {
 //     reader.readAsDataURL(ev.target.files[0]);
 // }
 
-function onmoveLineLeftClick() {
-    gSelectedItem.x = gSelectedItem.x - 5;
-}
-
-function onmoveLineRightClick() {
-    gSelectedItem.x = gSelectedItem.x + 5;
-}
-
-function onmoveLineUpClick() {
-    gSelectedItem.y = gSelectedItem.y - 5;
-}
-
-function onmoveLineDownClick() {
-    gSelectedItem.y = gSelectedItem.y + 5;
-}
-
-function keyHandler(key) {
-    if (!gSelectedItem) return;
-    switch (key) {
-        case "ArrowUp":
-            onmoveLineUpClick();
-            break;
-
-        case "ArrowDown":
-            onmoveLineDownClick();
-            break;
-
-        case "ArrowRight":
-            onmoveLineRightClick();
-            break;
-
-        case "ArrowLeft":
-            onmoveLineLeftClick();
-            break;
-    }
-}
