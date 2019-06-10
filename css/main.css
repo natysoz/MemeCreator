@@ -138,7 +138,7 @@ div > img {
     font-size: 1.4rem;
     position: absolute;
     bottom: 0;
-    height: 10vh;
+    height: 8vh;
     background-color: #2c2c2c;
     width: inherit;
     display: flex;
@@ -193,7 +193,7 @@ div > img {
     left: 0;
     background-color: #262626;
     width: 100vw;
-    height: 87vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -475,7 +475,7 @@ div > img {
     font-size: 1.15rem;
     display: flex;
     align-items: baseline;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     transition: all 0.35s;
 }
 .text-area >*{
@@ -504,19 +504,21 @@ div > img {
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none;
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #2196F3; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #2196F3; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background: #ffffff;
+    cursor: pointer;
 }
 
 

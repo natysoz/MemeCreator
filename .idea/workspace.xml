@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="" />
+    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/meme-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/meme-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/todos.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,84 +17,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery.html">
+        <entry file="file://$PROJECT_DIR$/js/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            <state relative-caret-position="332">
+              <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#onSendMail#0" />
+                <element signature="n#!!block;n#createEmailUrl#0" />
+                <element signature="n#!!block;n#redirectTo#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
-              <folding>
-                <element signature="e#232#561#0" />
-                <element signature="e#245#558#0" />
-                <element signature="n#!!block;n#onInit#1" />
-                <element signature="n#!!block;n#canvasSetup#0" />
-                <element signature="n#!!block;n#renderCanvasProps#0" />
-                <element signature="e#908#1034#0" />
-                <element signature="n#!!block;n#resetCanvas#0" />
-                <element signature="n#!!block;n#renderCanvas#0" />
-                <element signature="e#1298#1474#0" />
-                <element signature="e#1322#1405#0" />
-                <element signature="e#1411#1468#0" />
-                <element signature="e#1509#1541#0" />
-                <element signature="n#!!block;n#renderOutline#0" />
-                <element signature="n#!!block;n#renderProp#0" />
-                <element signature="n#!!block;n#renderText#0" />
-                <element signature="n#!!block;n#renderBackgroundImage#0" />
-                <element signature="n#!!block;n#onFontChange#0" />
-                <element signature="n#!!block;n#onTextAdd#0" />
-                <element signature="e#4853#4869#0" />
-                <element signature="e#3917#4200#0" />
-                <element signature="n#!!block;n#onPropAdd#0" />
-                <element signature="n#!!block;n#onPropDelete#0" />
-                <element signature="e#4382#4434#0" />
-                <element signature="n#!!block;n#propAdd#0" />
-                <element signature="e#4577#4736#0" />
-                <element signature="e#5801#5962#0" />
-                <element signature="e#5993#6200#0" />
-                <element signature="e#6228#6489#0" />
-                <element signature="e#6312#6395#0" />
-                <element signature="e#6404#6487#0" />
-                <element signature="n#!!block;n#setEventListeners#0" />
-                <element signature="n#!!block;n#setMobileListeners#0" />
-                <element signature="e#4905#4956#0" />
-                <element signature="e#4988#5382#0" />
-                <element signature="e#5015#5376#0" />
-                <element signature="e#5052#5207#0" />
-                <element signature="e#5213#5366#0" />
-                <element signature="e#5414#5450#0" />
-                <element signature="e#5485#5521#0" />
-                <element signature="n#!!block;n#setMouseListeners#0" />
-                <element signature="e#5586#5637#0" />
-                <element signature="e#5669#6063#0" />
-                <element signature="e#5696#6057#0" />
-                <element signature="e#5733#5888#0" />
-                <element signature="e#5894#6047#0" />
-                <element signature="e#6094#6130#0" />
-                <element signature="e#6162#6198#0" />
-                <element signature="e#6575#6682#0" />
-                <element signature="n#!!block;n#onAvatarMenu#0" />
-                <element signature="n#!!block;n#onFontsMenu#0" />
-                <element signature="n#!!block;n#onSearchSubmit#0" />
-                <element signature="n#!!block;n#onCanvasMode#0" />
-                <element signature="n#!!block;n#cleanFields#0" />
-                <element signature="n#!!block;n#onLoadMoreGifs#0" />
-                <element signature="n#!!block;n#onLangSelect#0" />
-                <element signature="n#!!block;n#downloadCanvas#0" />
-                <element signature="n#!!block;n#uploadToCanvas#0" />
-                <element signature="e#8677#8721#0" />
-                <element signature="e#8746#8789#0" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="18" column="151" selection-start-line="18" selection-start-column="151" selection-end-line="18" selection-end-column="151" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -96,11 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/meme-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!block;n#searchGifImages#0" />
-              </folding>
+            <state relative-caret-position="-156">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -108,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/meme-util-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="182">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -117,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/meme-render-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="338">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -127,19 +79,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/unit-test.js">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+            <state relative-caret-position="175">
+              <caret line="511" column="25" lean-forward="true" selection-start-line="511" selection-start-column="25" selection-end-line="511" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+        <entry file="file://$PROJECT_DIR$/js/unit-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1361">
-              <caret line="582" column="31" lean-forward="true" selection-start-line="582" selection-start-column="31" selection-end-line="582" selection-end-column="31" />
+            <state relative-caret-position="131">
+              <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -156,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selected</find>
-      <find>onTxtColorChange</find>
       <find>outline</find>
       <find>downloadCanvas</find>
       <find>uploadToCanvas()</find>
@@ -172,7 +122,6 @@
       <find>.tool-text-color</find>
       <find>grid-template-columns</find>
       <find>fa-edit</find>
-      <find>.main-navbar-symbols</find>
       <find>prop</find>
       <find>clear</find>
       <find>dotted</find>
@@ -186,6 +135,9 @@
       <find>select</find>
       <find>searchGifImages</find>
       <find>main-navbar</find>
+      <find>.main-navbar-symbols</find>
+      <find>400</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -200,7 +152,6 @@
         <option value="$PROJECT_DIR$/js/budget-controller.js" />
         <option value="$PROJECT_DIR$/js/budget-service.js" />
         <option value="$PROJECT_DIR$/image-edit.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/util-service.js" />
         <option value="$PROJECT_DIR$/js/meme-ui.js" />
         <option value="$PROJECT_DIR$/js/i18n-service.js" />
@@ -211,22 +162,23 @@
         <option value="$PROJECT_DIR$/js/unit-testing.js" />
         <option value="$PROJECT_DIR$/js/unit test 2.js" />
         <option value="$PROJECT_DIR$/js/unit2.js" />
-        <option value="$PROJECT_DIR$/js/todos.js" />
         <option value="$PROJECT_DIR$/js/meme-util-service.js" />
         <option value="$PROJECT_DIR$/unit-testing.html" />
         <option value="$PROJECT_DIR$/js/unit-test.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/meme-service.js" />
         <option value="$PROJECT_DIR$/gallery.html" />
+        <option value="$PROJECT_DIR$/js/todos.js" />
         <option value="$PROJECT_DIR$/js/meme-controller.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1937" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -239,17 +191,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+              <item name="MemeCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeCreator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+              <item name="MemeCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeCreator" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+              <item name="MemeCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeCreator" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -319,6 +271,7 @@
       <workItem from="1559898662978" duration="1977000" />
       <workItem from="1559900733477" duration="44760000" />
       <workItem from="1560011465572" duration="60449000" />
+      <workItem from="1560157565329" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Natysoz , include :&#10;&#10;1.WELCOME SCREEN &amp; STYLES &#10;2.API REQUEST FOR IMAGES BY TERM&#10;3.SINGLE PAGE APP CANVAS CREATED">
       <created>1559839383022</created>
@@ -625,15 +578,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148933000" />
+    <option name="totallyTimeSpent" value="152041000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49571317" visible="true" weight="0.19858156" />
-      <window_info id="Structure" order="1" sideWeight="0.5042868" side_tool="true" visible="true" weight="0.19858156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49333334" visible="true" weight="0.17491749" />
+      <window_info id="Structure" order="1" sideWeight="0.50666666" side_tool="true" visible="true" weight="0.17491749" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="GraphQL" />
       <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.17537023" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32969603" />
@@ -643,7 +597,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.16056119" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.15492958" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -685,7 +639,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/user-dashboard.css" />
     <entry file="file://$PROJECT_DIR$/image-edit.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/lib/picker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -711,36 +664,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/unit2.js">
+    <entry file="file://$PROJECT_DIR$/js/unit2.js" />
+    <entry file="file://$PROJECT_DIR$/js/meme-controller_merge.js" />
+    <entry file="file://$PROJECT_DIR$/gallery.html" />
+    <entry file="file://$PROJECT_DIR$/js/meme-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        <state relative-caret-position="-156">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/todos.js">
+    <entry file="file://$PROJECT_DIR$/js/unit-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#onSendMail#0" />
-            <element signature="n#!!block;n#createEmailUrl#0" />
-            <element signature="n#!!block;n#redirectTo#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/meme-controller_merge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="131">
+          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit-testing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="182">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -752,123 +696,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="582" column="31" lean-forward="true" selection-start-line="582" selection-start-column="31" selection-end-line="582" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/unit-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/meme-render-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="332">
+          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#onSendMail#0" />
+            <element signature="n#!!block;n#createEmailUrl#0" />
+            <element signature="n#!!block;n#redirectTo#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/meme-util-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="182">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/meme-service.js">
+    <entry file="file://$PROJECT_DIR$/js/meme-render-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="338">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
-            <element signature="n#!!block;n#searchGifImages#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
-          <folding>
-            <element signature="e#232#561#0" />
-            <element signature="e#245#558#0" />
-            <element signature="n#!!block;n#onInit#1" />
-            <element signature="n#!!block;n#canvasSetup#0" />
-            <element signature="n#!!block;n#renderCanvasProps#0" />
-            <element signature="e#908#1034#0" />
-            <element signature="n#!!block;n#resetCanvas#0" />
-            <element signature="n#!!block;n#renderCanvas#0" />
-            <element signature="e#1298#1474#0" />
-            <element signature="e#1322#1405#0" />
-            <element signature="e#1411#1468#0" />
-            <element signature="e#1509#1541#0" />
-            <element signature="n#!!block;n#renderOutline#0" />
-            <element signature="n#!!block;n#renderProp#0" />
-            <element signature="n#!!block;n#renderText#0" />
-            <element signature="n#!!block;n#renderBackgroundImage#0" />
-            <element signature="n#!!block;n#onFontChange#0" />
-            <element signature="n#!!block;n#onTextAdd#0" />
-            <element signature="e#4853#4869#0" />
-            <element signature="e#3917#4200#0" />
-            <element signature="n#!!block;n#onPropAdd#0" />
-            <element signature="n#!!block;n#onPropDelete#0" />
-            <element signature="e#4382#4434#0" />
-            <element signature="n#!!block;n#propAdd#0" />
-            <element signature="e#4577#4736#0" />
-            <element signature="e#5801#5962#0" />
-            <element signature="e#5993#6200#0" />
-            <element signature="e#6228#6489#0" />
-            <element signature="e#6312#6395#0" />
-            <element signature="e#6404#6487#0" />
-            <element signature="n#!!block;n#setEventListeners#0" />
-            <element signature="n#!!block;n#setMobileListeners#0" />
-            <element signature="e#4905#4956#0" />
-            <element signature="e#4988#5382#0" />
-            <element signature="e#5015#5376#0" />
-            <element signature="e#5052#5207#0" />
-            <element signature="e#5213#5366#0" />
-            <element signature="e#5414#5450#0" />
-            <element signature="e#5485#5521#0" />
-            <element signature="n#!!block;n#setMouseListeners#0" />
-            <element signature="e#5586#5637#0" />
-            <element signature="e#5669#6063#0" />
-            <element signature="e#5696#6057#0" />
-            <element signature="e#5733#5888#0" />
-            <element signature="e#5894#6047#0" />
-            <element signature="e#6094#6130#0" />
-            <element signature="e#6162#6198#0" />
-            <element signature="e#6575#6682#0" />
-            <element signature="n#!!block;n#onAvatarMenu#0" />
-            <element signature="n#!!block;n#onFontsMenu#0" />
-            <element signature="n#!!block;n#onSearchSubmit#0" />
-            <element signature="n#!!block;n#onCanvasMode#0" />
-            <element signature="n#!!block;n#cleanFields#0" />
-            <element signature="n#!!block;n#onLoadMoreGifs#0" />
-            <element signature="n#!!block;n#onLangSelect#0" />
-            <element signature="n#!!block;n#downloadCanvas#0" />
-            <element signature="n#!!block;n#uploadToCanvas#0" />
-            <element signature="e#8677#8721#0" />
-            <element signature="e#8746#8789#0" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="18" column="151" selection-start-line="18" selection-start-column="151" selection-end-line="18" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="511" column="25" lean-forward="true" selection-start-line="511" selection-start-column="25" selection-end-line="511" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
         </state>
       </provider>
     </entry>
