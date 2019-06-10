@@ -397,13 +397,17 @@ function onLangSelect(elLangSelect) {
 
 // TODO functions to push into SERVICE >>
 
-function downloadCanvas() {
-    // ctx.color = 'black';
-    // ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    var image = canvas.toDataURL("image/jpg");
-    window.location.href = image;
+function downloadCanvas(elLink) {
+    var imgContent = canvas.toDataURL('image/jpeg');
+    elLink.href = imgContent;
 }
+
+
+
+
+
+
 
 function uploadToCanvas() {
     var file = document.querySelector('input[type=file]').files[0];
@@ -416,4 +420,52 @@ function uploadToCanvas() {
     if (file) {
         reader.readAsDataURL(file);
     }
+}
+
+// on submit call to this function
+function uploadImg(elForm, ev) {
+    ev.preventDefault();
+
+    document.getElementById('imgData').value = canvas.toDataURL("image/jpeg");
+   
+    // A function to be called if request succeeds
+    function onSuccess(uploadedImgUrl) {
+        console.log('uploadedImgUrl', uploadedImgUrl);
+
+        uploadedImgUrl = encodeURIComponent(uploadedImgUrl)
+
+    }
+    doUploadImg(elForm, onSuccess);
+}
+
+function doUploadImg(elForm, onSuccess) {
+    var formData = new FormData(elForm);
+
+    fetch('http://ca-upload.com/here/upload.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(function (response) {
+        return response.text()
+    })
+    .then(onSuccess)
+    .catch(function (error) {
+        console.error(error)
+    })
+}
+
+function onFileInputChange(ev) {
+    handleImageFromInput(ev, renderBackgroundImage)
+}
+
+function handleImageFromInput(ev, onImageReady) {
+    // document.querySelector('.share-container').innerHTML = ''
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        var img = new Image();
+        img.onload = onImageReady.bind(null, img)
+        img.src = event.target.result;
+    }
+    reader.readAsDataURL(ev.target.files[0]);
 }

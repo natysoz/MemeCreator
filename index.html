@@ -22,7 +22,10 @@
     <div class="top-navbar">
         <div class="back" onclick="onToggleEditMode()"><i class="fas fa-arrow-left"></i></div>
         <div onclick="uploadToCanvas()"><i class="fa fa-upload" aria-hidden="true"></i></div>
-        <div onclick="downloadCanvas()"><i class="fa fa-download" aria-hidden="true"></i></div>
+
+        <input type="file" name="image" onchange="onFileInputChange(event)" />
+
+        <a href="#" onclick="downloadCanvas(this)" download="my-img.jpg" class="fa fa-download" aria-hidden="true" ></a>
     </div>
 
 
