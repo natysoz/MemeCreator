@@ -20,7 +20,6 @@
 <section id="modal" class="meme-editor hide-modal">
 
     <div class="top-navbar">
-        <div class="delete" onclick="onPropDelete()"><i class="fas fa-trash"></i></div>
         <div class="back" onclick="onToggleEditMode()"><i class="fas fa-arrow-left"></i></div>
         <div onclick="uploadToCanvas()"><i class="fa fa-upload" aria-hidden="true"></i></div>
         <div onclick="downloadCanvas()"><i class="fa fa-download" aria-hidden="true"></i></div>
@@ -45,9 +44,10 @@
     <section class="edit-section flex-container">
         <nav class="main-navbar flex row">
             <div class="tool-text-color flex" id="paint-brush"><i class="fas fa-paint-brush"></i></div>
-            <div class="tool-text-color flex" id="text-color"><i class="fas fa-fill-drip"></i></div>
             <div onclick="onFontsMenu()" class="tool-text-color flex" id="font-family"><i class="fas fa-font"></i></div>
+            <div class="tool-text-color flex" id="text-color"><i class="fas fa-fill-drip"></i></div>
             <div onclick="onPropsMenu()" class="tool-text-color flex symbols"><i class="far fa-smile-beam"></i></div>
+            <div onclick="onPropDelete()" class="tool-text-color flex symbols"><i class="fas fa-trash"></i></div>
         </nav>
 
         <div class="main-navbar-symbols props-menu hide-modal">
