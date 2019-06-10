@@ -19,7 +19,7 @@ let appData = {
         {line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 485,},
     ],
 };
-var text;
+
 //SETUP
 function onInit() {
     canvasSetup();         // SETUP CANVAS
@@ -70,6 +70,21 @@ function renderCanvas() {
     if (isDraggable && !isText) {
         renderOutline();
     }
+    if (isDraggable && !isText) {
+        renderOutlineText();
+    }
+}
+
+function renderOutlineText() {
+    let y = gSelectedItem.y - gSelectedItem.size;
+    let x = gSelectedItem.x - gSelectedItem.line.length * gSelectedItem.size / 4;
+    let width = gSelectedItem.line.length * gSelectedItem.size / 2;
+    let height = gSelectedItem.size + 10;
+    ctx.save();
+    ctx.strokeStyle = "white";
+    ctx.setLineDash([12]);
+    ctx.strokeRect(x, y, width, height);
+    ctx.restore();
 }
 
 function renderOutline() {
