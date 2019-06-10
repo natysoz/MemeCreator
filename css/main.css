@@ -457,9 +457,7 @@ div > img {
     display: none;
 }
 
-.slide-container {
-    width: 100%;
-}
+
 
 .text-input {
     border-bottom: 1px whitesmoke solid;
@@ -484,17 +482,40 @@ div > img {
     transform: scale(1.3);
 }
 
+.slide-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* The slider itself */
 .slider {
     -webkit-appearance: none; /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 90%; /* Full-width */
     height: 25px; /* Specified height */
     background: #363636; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
+}
+
+.slider-a-small{
+    font-size: 1rem;
+    margin-right: 5px;
+}
+.slider-a-big{
+    font-size: 1.7rem;
+    margin-left: 5px;
+}
+
+@media (min-width:728px){
+    .slider{
+        width: 60%;
+
+    }
 }
 
 /* Mouse-over effects */

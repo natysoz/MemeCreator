@@ -21,7 +21,7 @@ function searchGifImages(userSearch) {
                     gGifImages.push(data.data[i].images.downsized.url)
                 }
                 saveToStorage('gifs', gGifImages);
-                renderGrid(gGifImages); //sorry for using it in here!
+                renderGrid(gGifImages);
             })).catch(err => {
         onError(err);
     });

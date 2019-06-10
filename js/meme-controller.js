@@ -82,20 +82,15 @@ function keyHandler(key) {
 
 function renderCanvas() {
     window.requestAnimationFrame(() => {
-        // resetCanvas();
         renderBackgroundImage(image, ctx);
         renderCanvasProps();
+        renderOutlineText();
+        renderOutline();
         renderCanvas();
     });
 }
 
 //RENDERS
-// function resetCanvas() {
-//     ctx.beginPath();
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-// }
 
 function renderCanvasProps() {
     //TODO Render with ForEach
@@ -115,6 +110,7 @@ function renderCanvasProps() {
 }
 
 function renderOutlineText() {
+    if (!gSelectedItem || gSelectedItem.src) return;
     let y = gSelectedItem.y - gSelectedItem.size;
     let x = gSelectedItem.x - gSelectedItem.line.length * gSelectedItem.size / 4;
     let width = gSelectedItem.line.length * gSelectedItem.size / 2;
@@ -127,6 +123,7 @@ function renderOutlineText() {
 }
 
 function renderOutline() {
+    if (!gSelectedItem || !gSelectedItem.src) return;
     ctx.save();
     ctx.strokeStyle = "white";
     ctx.setLineDash([12]);
