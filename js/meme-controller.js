@@ -15,8 +15,8 @@ let gSelectedSize;
 let gIsEditing;
 let appData = {
     props: [
-        {line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40},
-        {line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 485,},
+        { line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40 },
+        { line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 485, },
     ],
 };
 
@@ -24,7 +24,7 @@ let appData = {
 function onInit() {
     canvasSetup();         // SETUP CANVAS
     setEventListeners();   // LISTEN!
-    renderCanvasProps();   // Render Items
+    renderCanvas();   // Render Items
     onColorChange();
     renderPopularSearchItems();
 }
@@ -41,24 +41,63 @@ function canvasSetup() {
     gSelectedItem = appData.props[1];
 }
 
-function renderCanvasProps() {
+
+function onmoveLineLeftClick() {
+    gSelectedItem.x = gSelectedItem.x - 5;
+}
+
+function onmoveLineRightClick() {
+    gSelectedItem.x = gSelectedItem.x + 5;
+}
+
+function onmoveLineUpClick() {
+    gSelectedItem.y = gSelectedItem.y - 5;
+}
+
+function onmoveLineDownClick() {
+    gSelectedItem.y = gSelectedItem.y + 5;
+}
+
+function keyHandler(key) {
+    if (!gSelectedItem) return;
+    switch (key) {
+        case "ArrowUp":
+            onmoveLineUpClick();
+            break;
+
+        case "ArrowDown":
+            onmoveLineDownClick();
+            break;
+
+        case "ArrowRight":
+            onmoveLineRightClick();
+            break;
+
+        case "ArrowLeft":
+            onmoveLineLeftClick();
+            break;
+    }
+}
+
+
+function renderCanvas() {
     window.requestAnimationFrame(() => {
-        resetCanvas();
+        // resetCanvas();
         renderBackgroundImage(image, ctx);
-        renderCanvas();
         renderCanvasProps();
+        renderCanvas();
     });
 }
 
 //RENDERS
-function resetCanvas() {
-    ctx.beginPath();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+// function resetCanvas() {
+//     ctx.beginPath();
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-}
+// }
 
-function renderCanvas() {
+function renderCanvasProps() {
     //TODO Render with ForEach
     appData.props.forEach(item => {
         if (item.src) {
@@ -79,7 +118,7 @@ function renderOutlineText() {
     let y = gSelectedItem.y - gSelectedItem.size;
     let x = gSelectedItem.x - gSelectedItem.line.length * gSelectedItem.size / 4;
     let width = gSelectedItem.line.length * gSelectedItem.size / 2;
-    let height = gSelectedItem.size + 10;
+    let height = +gSelectedItem.size + 10;
     ctx.save();
     ctx.strokeStyle = "white";
     ctx.setLineDash([12]);
@@ -88,9 +127,11 @@ function renderOutlineText() {
 }
 
 function renderOutline() {
+    ctx.save();
     ctx.strokeStyle = "white";
-    //ctx.setLineDash([12]);
+    ctx.setLineDash([12]);
     ctx.strokeRect(gSelectedItem.x, gSelectedItem.y, gSelectedItem.size, gSelectedItem.size);
+    ctx.restore();
 }
 
 function renderProp(src, x, y, sizeX, sizeY) {
@@ -131,7 +172,7 @@ function onItemSelect(x, y) {
                     (x < prop.x && x > (prop.x - prop.line.length * prop.size)))
         }
     });
-    if (!currItem) {gSelectedItem=null; return};
+    if (!currItem) { gSelectedItem = null; return };
     isDraggable = true;
     gSelectedItem = currItem;
     updateTextField(currItem.line);
@@ -141,10 +182,10 @@ function onItemSelect(x, y) {
 
 function onSliderScale() {
     let sliderValue = document.querySelector(".slider");
-    if (!gSelectedItem)return;
+    if (!gSelectedItem) return;
     if (gSelectedItem.src) {
-        gSelectedItem.size = sliderValue.value *2.67;
-    } else gSelectedItem.size = sliderValue.value;
+        gSelectedItem.size = sliderValue.value * 2.67;
+    } else gSelectedItem.size = sliderValue.value;    
 }
 
 function onColorChange() {
@@ -156,15 +197,15 @@ function onColorChange() {
         color: 'violet',
         editorFormat: 'rgb',
         onDone: color => {
-            if(!gSelectedItem || gSelectedItem.src) return;
+            if (!gSelectedItem || gSelectedItem.src) return;
             gSelectedItem.color = color.rgbaString;
-            gSelectedColor =color.rgbaString;
+            gSelectedColor = color.rgbaString;
             textClr.style.backgroundColor = color.rgbaString;
             updateTextField(gSelectedItem.line)
         }
     });
     textClrPicker.onChange = function (color) {
-        if(!gSelectedItem || gSelectedItem.src) return;
+        if (!gSelectedItem || gSelectedItem.src) return;
         gSelectedItem.color = color.rgbaString;
         textClr.style.backgroundColor = color.rgbaString;
     };
@@ -179,33 +220,35 @@ function onFontChange(font) {
 
 function onTextAdd(text) {
     if (!text) return;
-    if (gIsEditing){
-        gIsEditing=false;
-        gSelectedItem=null;
+    if (gIsEditing) {
+        gIsEditing = false;
+        gSelectedItem = null;
         cleanFields();
         checkEditToggle();
         return;
     }
-    if(gSelectedItem)return;
+    if (gSelectedItem) return;
     appData.props.push(
-        {line: text, id: getRandomID(appData.props), font: gSelectedFont, size: gSelectedSize, align: 'center',
-         color: gSelectedColor, strokeColor: 'black', x: 200, y: 200,}
+        {
+            line: text, id: getRandomID(appData.props), font: gSelectedFont, size: gSelectedSize, align: 'center',
+            color: gSelectedColor, strokeColor: 'black', x: 200, y: 200,
+        }
     );
     checkEditToggle();
 }
 
-function onPropAdd(prop){
+function onPropAdd(prop) {
     var name = prop.getAttribute('data-name'); // fruitCount = '12'
-    propAdd(name,prop.firstChild);
+    propAdd(name, prop.firstChild);
     onPropsMenu();
 }
 
-function onPropDelete(){
-    if(!gSelectedItem) return;
-    var delPropID = appData.props.findIndex(prop=>{
+function onPropDelete() {
+    if (!gSelectedItem) return;
+    var delPropID = appData.props.findIndex(prop => {
         return gSelectedItem.id === prop.id;
     });
-    appData.props.splice(delPropID,1);
+    appData.props.splice(delPropID, 1);
     gSelectedItem = null;
 }
 
@@ -214,7 +257,7 @@ function propAdd(name, src) {
     appData.props.push(
         {
             name: name,
-            id:getRandomID(appData.props),
+            id: getRandomID(appData.props),
             src: src,
             size: 128,
             x: 0,
@@ -223,31 +266,31 @@ function propAdd(name, src) {
     )
 }
 
-function updateTextField(txt){
+function updateTextField(txt) {
     if (gSelectedItem.src) return;
     var eInput = document.querySelector('.text-input');
-    eInput.value =txt ;
+    eInput.value = txt;
     eInput.style.color = gSelectedColor;
 
 
 }
 
-function onTextEditing(input){
-    if(!gSelectedItem || gSelectedItem.src) return;
-    gIsEditing=true;
+function onTextEditing(input) {
+    if (!gSelectedItem || gSelectedItem.src) return;
+    gIsEditing = true;
     checkEditToggle();
     document.querySelector('.text-button').classList.toggle('btn');
-    gSelectedItem.line =input;
+    gSelectedItem.line = input;
 }
 
-function checkEditToggle(){
+function checkEditToggle() {
     console.log('checking')
     let p = document.querySelector('.text-button').firstChild;
-    if (gIsEditing){
+    if (gIsEditing) {
         p.classList.remove('fa-plus');
         p.classList.add('fa-check');
     }
-    else{
+    else {
         document.querySelector('.text-button').classList.toggle('btn');
         p.classList.remove('fa-check');
         p.classList.add('fa-plus');
@@ -360,8 +403,8 @@ function downloadCanvas() {
 }
 
 function uploadToCanvas() {
-    var file    = document.querySelector('input[type=file]').files[0];
-    var reader  = new FileReader();
+    var file = document.querySelector('input[type=file]').files[0];
+    var reader = new FileReader();
 
     reader.addEventListener("load", function () {
         preview.src = reader.result;
