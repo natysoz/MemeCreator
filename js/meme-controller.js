@@ -19,15 +19,6 @@ let appData = {
     ],
 };
 
-// // facebook api
-// (function(d, s, id) {
-//     var js, fjs = d.getElementsByTagName(s)[0];
-//     if (d.getElementById(id)) return;
-//     js = d.createElement(s); js.id = id;
-//     js.src = 'https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.0&appId=807866106076694&autoLogAppEvents=1';
-//     fjs.parentNode.insertBefore(js, fjs);
-//   }(document, 'script', 'facebook-jssdk'));
-
 //SETUP
 function onInit() {
     canvasSetup();         // SETUP CANVAS
@@ -39,6 +30,14 @@ function onInit() {
 
 function canvasSetup() {
     canvas = document.querySelector('#canvas');
+    if (isMobileDevice()){
+        canvas.width = 325;
+        canvas.height = 325;
+    }
+    else {
+        canvas.width = 500;
+        canvas.height = 600;
+    }
     image = document.querySelector('#background');
     backgroundImage = document.querySelector('#background');
     ctx = canvas.getContext("2d");
@@ -48,6 +47,11 @@ function canvasSetup() {
     gSelectedSize = '40';
     gSelectedItem = appData.props[1];
 }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 
 function renderCanvas() {
     window.requestAnimationFrame(() => {
@@ -187,8 +191,8 @@ function onColorChange() {
 }
 
 function onFontChange(font) {
-    if (!gSelectedItem) return;
-    if (gSelectedItem.src) return;
+    if (!gSelectedItem) {onFontsMenu();return;}
+    if (gSelectedItem.src) {onFontsMenu();return;}
     gSelectedItem.font = font.innerText;
     onFontsMenu()
 }
@@ -367,6 +371,7 @@ function onSelectImage(elGifSelect) {
 function onPropsMenu() {
     let propsMenu = document.querySelector('.props-menu');
     propsMenu.classList.toggle('hide-modal');
+    console.log(propsMenu)
 }
 
 function onFontsMenu() {
@@ -393,12 +398,6 @@ function onInputFinish() {
     document.querySelector('.text-input').value = '';
 }
 
-// TODO MORE FEATURES
-
-function onLoadMoreGifs() {
-    //TODO:  create andother function that will Not clear , but Append to the curr Array
-}
-
 function downloadCanvas(elLink) {
     gSelectedItem = null;
     renderBackgroundImage(image, ctx);
@@ -421,11 +420,11 @@ function handleImageFromInput(ev, onImageReady) {
         var img = new Image();
         img.onload = onImageReady.bind(null, img)
         img.src = event.target.result;
-    }
+    };
     reader.readAsDataURL(ev.target.files[0]);
 }
-
 
 function onImageUpload(img) {
 image = img;
 }
+

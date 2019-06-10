@@ -1,7 +1,7 @@
 'user strict';
 
 let gGifImages = [];
-let gRequest = 10;
+let gRequest = 12;
 let gKeywords;
 
 
@@ -31,7 +31,6 @@ function searchGifImages(userSearch) {
 function getGifImages() {
     return loadFromStorage('gifs');
 }
-
 
 function createFakeKeywords() {
     return [
@@ -77,4 +76,26 @@ function pushNewKeyword(searchTerm) {
     }
     saveKeywords()
 }
+// TODO MORE FEATURES
+function onLoadMoreGifs() {
+    //TODO:  create andother function that will Not clear , but Append to the curr Array
+}
 
+function fileMove() {
+    if (navigator.appName == "Microsoft Internet Explorer") {
+        return; // Don't need to do this in IE.
+    }
+    var link = document.getElementById("fileLink");
+    var form = document.getElementById("uploadForm");
+    var x = pageX(link);
+    var y = pageY(link);
+    form.style.position = 'absolute';
+    form.style.left = x + 'px';
+    form.style.top = y + 'px';
+}
+
+function fileBrowse() {
+    // This works in IE only. Doesn't do jack in FF. :(
+    var browseField = document.getElementById("uploadForm").file;
+    browseField.click();
+}

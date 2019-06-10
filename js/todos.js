@@ -8,8 +8,8 @@
 // Editor	Text color......................................................TODO DONE
 // Editor	Type and Change Text............................................TODO DONE
 // Core	Download button.....................................................TODO DONE
-// Core	Navigation (Desktop/Mobile).........................................WIP Naty
-// Images list	Filter images list by search box............................TODO DONE /*weDid Better
+// Core	Navigation (Desktop/Mobile).........................................TODO DONE
+// Images list	Filter images list by search box............................TODO DONE
 // Editor	Support adding multiple lines ("add line" button)...............TODO DONE
 // Images list	Filter images list by popular-keyword.......................TODO DONE
 // Editor	Align left, right, center.......................................TODO DONE
