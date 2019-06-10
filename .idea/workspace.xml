@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
+              <folding>
+                <element signature="e#232#561#0" />
+                <element signature="e#245#558#0" />
+                <element signature="n#!!block;n#onInit#1" />
+                <element signature="n#!!block;n#canvasSetup#0" />
+                <element signature="n#!!block;n#renderCanvasProps#0" />
+                <element signature="e#908#1034#0" />
+                <element signature="n#!!block;n#resetCanvas#0" />
+                <element signature="n#!!block;n#renderCanvas#0" />
+                <element signature="e#1298#1474#0" />
+                <element signature="e#1322#1405#0" />
+                <element signature="e#1411#1468#0" />
+                <element signature="e#1509#1541#0" />
+                <element signature="n#!!block;n#renderOutline#0" />
+                <element signature="n#!!block;n#renderProp#0" />
+                <element signature="n#!!block;n#renderText#0" />
+                <element signature="n#!!block;n#renderBackgroundImage#0" />
+                <element signature="n#!!block;n#onFontChange#0" />
+                <element signature="n#!!block;n#onTextAdd#0" />
+                <element signature="e#4853#4869#0" />
+                <element signature="e#3917#4200#0" />
+                <element signature="n#!!block;n#onPropAdd#0" />
+                <element signature="n#!!block;n#onPropDelete#0" />
+                <element signature="e#4382#4434#0" />
+                <element signature="n#!!block;n#propAdd#0" />
+                <element signature="e#4577#4736#0" />
+                <element signature="e#5801#5962#0" />
+                <element signature="e#5993#6200#0" />
+                <element signature="e#6228#6489#0" />
+                <element signature="e#6312#6395#0" />
+                <element signature="e#6404#6487#0" />
+                <element signature="n#!!block;n#setEventListeners#0" />
+                <element signature="n#!!block;n#setMobileListeners#0" />
+                <element signature="e#4905#4956#0" />
+                <element signature="e#4988#5382#0" />
+                <element signature="e#5015#5376#0" />
+                <element signature="e#5052#5207#0" />
+                <element signature="e#5213#5366#0" />
+                <element signature="e#5414#5450#0" />
+                <element signature="e#5485#5521#0" />
+                <element signature="n#!!block;n#setMouseListeners#0" />
+                <element signature="e#5586#5637#0" />
+                <element signature="e#5669#6063#0" />
+                <element signature="e#5696#6057#0" />
+                <element signature="e#5733#5888#0" />
+                <element signature="e#5894#6047#0" />
+                <element signature="e#6094#6130#0" />
+                <element signature="e#6162#6198#0" />
+                <element signature="e#6575#6682#0" />
+                <element signature="n#!!block;n#onAvatarMenu#0" />
+                <element signature="n#!!block;n#onFontsMenu#0" />
+                <element signature="n#!!block;n#onSearchSubmit#0" />
+                <element signature="n#!!block;n#onCanvasMode#0" />
+                <element signature="n#!!block;n#cleanFields#0" />
+                <element signature="n#!!block;n#onLoadMoreGifs#0" />
+                <element signature="n#!!block;n#onLangSelect#0" />
+                <element signature="n#!!block;n#downloadCanvas#0" />
+                <element signature="n#!!block;n#uploadToCanvas#0" />
+                <element signature="e#8677#8721#0" />
+                <element signature="e#8746#8789#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/meme-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!block;n#searchGifImages#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/meme-util-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/meme-render-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/unit-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1361">
+              <caret line="582" column="31" lean-forward="true" selection-start-line="582" selection-start-column="31" selection-end-line="582" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selected</find>
+      <find>onTxtColorChange</find>
+      <find>outline</find>
+      <find>downloadCanvas</find>
+      <find>uploadToCanvas()</find>
+      <find>robot</find>
+      <find>text-input</find>
+      <find>.text-input</find>
+      <find>.text-area</find>
+      <find>updateTextField</find>
+      <find>upload</find>
+      <find>onTextChange</find>
+      <find>40vw</find>
+      <find>.tool-text-color</find>
+      <find>grid-template-columns</find>
+      <find>fa-edit</find>
+      <find>.main-navbar-symbols</find>
+      <find>prop</find>
+      <find>clear</find>
+      <find>dotted</find>
+      <find>.btn</find>
+      <find>buzz-scale</find>
+      <find>onTextAdd</find>
+      <find>checkEditToggle</find>
+      <find>onTextEditing</find>
+      <find>text-button</find>
+      <find>console</find>
+      <find>select</find>
+      <find>searchGifImages</find>
+      <find>main-navbar</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>let</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/budget-controller.js" />
+        <option value="$PROJECT_DIR$/js/budget-service.js" />
+        <option value="$PROJECT_DIR$/image-edit.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/util-service.js" />
+        <option value="$PROJECT_DIR$/js/meme-ui.js" />
+        <option value="$PROJECT_DIR$/js/i18n-service.js" />
+        <option value="$PROJECT_DIR$/js/render-service.js" />
+        <option value="$PROJECT_DIR$/js/index-controller.js" />
+        <option value="$PROJECT_DIR$/js/meme-i18n-service.js" />
+        <option value="$PROJECT_DIR$/js/meme-render-service.js" />
+        <option value="$PROJECT_DIR$/js/unit-testing.js" />
+        <option value="$PROJECT_DIR$/js/unit test 2.js" />
+        <option value="$PROJECT_DIR$/js/unit2.js" />
+        <option value="$PROJECT_DIR$/js/todos.js" />
+        <option value="$PROJECT_DIR$/js/meme-util-service.js" />
+        <option value="$PROJECT_DIR$/unit-testing.html" />
+        <option value="$PROJECT_DIR$/js/unit-test.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/meme-service.js" />
+        <option value="$PROJECT_DIR$/gallery.html" />
+        <option value="$PROJECT_DIR$/js/meme-controller.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <sortByType ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sprint2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sprint2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Ex-20-MemeApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Natysoz\Google Drive\Natysoz\SPRINT 2\Ex-20-MemeApp" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Ex-20-MemeApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Natysoz\Google Drive\Natysoz\SPRINT 2\Ex-20-MemeApp" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="my-design" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Natysoz\WebstormProjects\sprint2\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HTML5_OUTLINE_MODE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="" />
+      <created>1559817172769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559817172769</updated>
+      <workItem from="1559817175415" duration="81000" />
+      <workItem from="1559817267387" duration="19677000" />
+      <workItem from="1559898662978" duration="1977000" />
+      <workItem from="1559900733477" duration="44760000" />
+      <workItem from="1560011465572" duration="60449000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adding Natysoz , include :&#10;&#10;1.WELCOME SCREEN &amp; STYLES &#10;2.API REQUEST FOR IMAGES BY TERM&#10;3.SINGLE PAGE APP CANVAS CREATED">
+      <created>1559839383022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559839383022</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding some more css">
+      <created>1559839886608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559839886608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding some more css">
+      <created>1559840077048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559840077048</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding some more TODOS">
+      <created>1559840555137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559840555137</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adding some more TODOS">
+      <created>1559840663278</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559840663278</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reset Search Bars">
+      <created>1559840871636</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559840871636</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Reset Search Bars">
+      <created>1559846590723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559846590724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Reset Search Bars">
+      <created>1559848484642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559848484642</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Reset Search Bars">
+      <created>1559852130839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559852130839</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Reset Search Bars">
+      <created>1559854550937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559854550937</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update TODO List&#10;Wip Edit Mode">
+      <created>1559854580477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559854580477</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update TODO List&#10;Wip Edit Mode">
+      <created>1559860875167</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559860875167</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Wip Canvas">
+      <created>1559862650337</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559862650337</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Wip Canvas">
+      <created>1559863201827</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1559863201827</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update Services">
+      <created>1559898823278</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559898823278</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update before Merge">
+      <created>1559900590051</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559900590051</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Keywords Almost Finished">
+      <created>1559905638565</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559905638565</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Popular system Done">
+      <created>1559909855027</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1559909855027</updated>
+    </task>
+    <task id="LOCAL-00019" summary="connect server Data to Canvas WIP">
+      <created>1559911988229</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559911988229</updated>
+    </task>
+    <task id="LOCAL-00020" summary="connect server Data to Canvas WIP">
+      <created>1559912611723</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1559912611723</updated>
+    </task>
+    <task id="LOCAL-00021" summary="connect server Data to Canvas WIP">
+      <created>1559914790676</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1559914790676</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Finalizing GUI">
+      <created>1559914824815</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1559914824815</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Adding Fonts Gui">
+      <created>1559918996136</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1559918996136</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix some Canvas Stuff">
+      <created>1559920519328</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1559920519328</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Edit mode more fixes">
+      <created>1559924509769</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1559924509769</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix more Mobile Responsive">
+      <created>1559925085960</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559925085960</updated>
+    </task>
+    <task id="LOCAL-00027" summary="*Create Drag in canvas&#10;*Fix Server Drawn Fixed Size&#10;*Fix Canvas Size&#10;*Images now Scale to FIT&#10;*Fix GRID to be Equal Squares&#10;*WIP Edit mode">
+      <created>1560005157072</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1560005157072</updated>
+    </task>
+    <task id="LOCAL-00028" summary="*Drag + outline">
+      <created>1560005535384</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1560005535384</updated>
+    </task>
+    <task id="LOCAL-00029" summary="*Drag + outline">
+      <created>1560006856390</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1560006856390</updated>
+    </task>
+    <task id="LOCAL-00030" summary="*Drag + outline COMPLETED">
+      <created>1560010626183</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1560010626183</updated>
+    </task>
+    <task id="LOCAL-00031" summary="*Drag + outline COMPLETED&#10;*Support all Types Text &amp; Props">
+      <created>1560044826579</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1560044826579</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update TODOS">
+      <created>1560045164771</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1560045164771</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update TODOS">
+      <created>1560073900987</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1560073900987</updated>
+    </task>
+    <task id="LOCAL-00034" summary="drag and scale Completed">
+      <created>1560075625317</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1560075625317</updated>
+    </task>
+    <task id="LOCAL-00035" summary="drag Code with Loops">
+      <created>1560078316903</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1560078316903</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Create New Controller &#10;change most of functions &#10;to support all props &#10;* Tools now work on all items">
+      <created>1560085183337</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1560085183337</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Create New Controller &#10;change most of functions &#10;to support all props &#10;* Tools now work on all items">
+      <created>1560085734980</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1560085734980</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Create New Controller &#10;change most of functions &#10;to support all props &#10;* Tools now work on all items">
+      <created>1560086663324</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1560086663324</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix that user cant push new empty texts">
+      <created>1560090632881</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1560090632881</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix that user cant push new empty texts">
+      <created>1560094841935</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1560094841935</updated>
+    </task>
+    <task id="LOCAL-00041" summary="created new text now use GColor">
+      <created>1560094981925</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1560094981925</updated>
+    </task>
+    <task id="LOCAL-00042" summary="created new text now use GColor">
+      <created>1560095484150</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1560095484150</updated>
+    </task>
+    <task id="LOCAL-00043" summary="*remove manual moving tools&#10;*all tools work on all item types&#10;*Added image Outlines&#10;*missing TEXT outline&#10;*Add 18 Prop Items">
+      <created>1560126969347</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1560126969347</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="148933000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49571317" visible="true" weight="0.19858156" />
+      <window_info id="Structure" order="1" sideWeight="0.5042868" side_tool="true" visible="true" weight="0.19858156" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.17537023" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32969603" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.16056119" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding some more TODOS" />
+    <MESSAGE value="Reset Search Bars" />
+    <MESSAGE value="Update TODO List&#10;Wip Edit Mode" />
+    <MESSAGE value="Wip Canvas" />
+    <MESSAGE value="Update Services" />
+    <MESSAGE value="Update before Merge" />
+    <MESSAGE value="Keywords Almost Finished" />
+    <MESSAGE value="Popular system Done" />
+    <MESSAGE value="connect server Data to Canvas WIP" />
+    <MESSAGE value="Finalizing GUI" />
+    <MESSAGE value="Adding Fonts Gui" />
+    <MESSAGE value="fix some Canvas Stuff" />
+    <MESSAGE value="Edit mode more fixes" />
+    <MESSAGE value="fix more Mobile Responsive" />
+    <MESSAGE value="*Create Drag in canvas&#10;*Fix Server Drawn Fixed Size&#10;*Fix Canvas Size&#10;*Images now Scale to FIT&#10;*Fix GRID to be Equal Squares&#10;*WIP Edit mode" />
+    <MESSAGE value="*Drag + outline" />
+    <MESSAGE value="*Drag + outline COMPLETED" />
+    <MESSAGE value="*Drag + outline COMPLETED&#10;*Support all Types Text &amp; Props" />
+    <MESSAGE value="update TODOS" />
+    <MESSAGE value="drag and scale Completed" />
+    <MESSAGE value="drag Code with Loops" />
+    <MESSAGE value="Create New Controller &#10;change most of functions &#10;to support all props &#10;* Tools now work on all items" />
+    <MESSAGE value="fix that user cant push new empty texts" />
+    <MESSAGE value="created new text now use GColor" />
+    <MESSAGE value="*remove manual moving tools&#10;*all tools work on all item types&#10;*Added image Outlines&#10;*missing TEXT outline&#10;*Add 18 Prop Items" />
+    <option name="LAST_COMMIT_MESSAGE" value="*remove manual moving tools&#10;*all tools work on all item types&#10;*Added image Outlines&#10;*missing TEXT outline&#10;*Add 18 Prop Items" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/user-dashboard.css" />
+    <entry file="file://$PROJECT_DIR$/image-edit.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/lib/picker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="577" column="17" lean-forward="true" selection-start-line="577" selection-start-column="17" selection-end-line="577" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-ui.js" />
+    <entry file="file://$PROJECT_DIR$/js/index-service.js" />
+    <entry file="file://$PROJECT_DIR$/js/index-controller.js" />
+    <entry file="file://$PROJECT_DIR$/js/meme-i18n-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/unit-testing.js" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/unit2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#onSendMail#0" />
+            <element signature="n#!!block;n#createEmailUrl#0" />
+            <element signature="n#!!block;n#redirectTo#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-controller_merge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-testing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="582" column="31" lean-forward="true" selection-start-line="582" selection-start-column="31" selection-end-line="582" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/unit-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-render-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-util-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!block;n#searchGifImages#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
+          <folding>
+            <element signature="e#232#561#0" />
+            <element signature="e#245#558#0" />
+            <element signature="n#!!block;n#onInit#1" />
+            <element signature="n#!!block;n#canvasSetup#0" />
+            <element signature="n#!!block;n#renderCanvasProps#0" />
+            <element signature="e#908#1034#0" />
+            <element signature="n#!!block;n#resetCanvas#0" />
+            <element signature="n#!!block;n#renderCanvas#0" />
+            <element signature="e#1298#1474#0" />
+            <element signature="e#1322#1405#0" />
+            <element signature="e#1411#1468#0" />
+            <element signature="e#1509#1541#0" />
+            <element signature="n#!!block;n#renderOutline#0" />
+            <element signature="n#!!block;n#renderProp#0" />
+            <element signature="n#!!block;n#renderText#0" />
+            <element signature="n#!!block;n#renderBackgroundImage#0" />
+            <element signature="n#!!block;n#onFontChange#0" />
+            <element signature="n#!!block;n#onTextAdd#0" />
+            <element signature="e#4853#4869#0" />
+            <element signature="e#3917#4200#0" />
+            <element signature="n#!!block;n#onPropAdd#0" />
+            <element signature="n#!!block;n#onPropDelete#0" />
+            <element signature="e#4382#4434#0" />
+            <element signature="n#!!block;n#propAdd#0" />
+            <element signature="e#4577#4736#0" />
+            <element signature="e#5801#5962#0" />
+            <element signature="e#5993#6200#0" />
+            <element signature="e#6228#6489#0" />
+            <element signature="e#6312#6395#0" />
+            <element signature="e#6404#6487#0" />
+            <element signature="n#!!block;n#setEventListeners#0" />
+            <element signature="n#!!block;n#setMobileListeners#0" />
+            <element signature="e#4905#4956#0" />
+            <element signature="e#4988#5382#0" />
+            <element signature="e#5015#5376#0" />
+            <element signature="e#5052#5207#0" />
+            <element signature="e#5213#5366#0" />
+            <element signature="e#5414#5450#0" />
+            <element signature="e#5485#5521#0" />
+            <element signature="n#!!block;n#setMouseListeners#0" />
+            <element signature="e#5586#5637#0" />
+            <element signature="e#5669#6063#0" />
+            <element signature="e#5696#6057#0" />
+            <element signature="e#5733#5888#0" />
+            <element signature="e#5894#6047#0" />
+            <element signature="e#6094#6130#0" />
+            <element signature="e#6162#6198#0" />
+            <element signature="e#6575#6682#0" />
+            <element signature="n#!!block;n#onAvatarMenu#0" />
+            <element signature="n#!!block;n#onFontsMenu#0" />
+            <element signature="n#!!block;n#onSearchSubmit#0" />
+            <element signature="n#!!block;n#onCanvasMode#0" />
+            <element signature="n#!!block;n#cleanFields#0" />
+            <element signature="n#!!block;n#onLoadMoreGifs#0" />
+            <element signature="n#!!block;n#onLangSelect#0" />
+            <element signature="n#!!block;n#downloadCanvas#0" />
+            <element signature="n#!!block;n#uploadToCanvas#0" />
+            <element signature="e#8677#8721#0" />
+            <element signature="e#8746#8789#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
