@@ -12,7 +12,12 @@ let gSelectedFont;
 let gSelectedColor;
 let gSelectedSize;
 let gIsEditing;
-let appData = getAppData();
+let appData = {
+    props: [
+        { line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40 },
+        { line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 390, },
+    ],
+};
 
 // // facebook api
 // (function(d, s, id) {
@@ -22,10 +27,6 @@ let appData = getAppData();
 //     js.src = 'https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.0&appId=807866106076694&autoLogAppEvents=1';
 //     fjs.parentNode.insertBefore(js, fjs);
 //   }(document, 'script', 'facebook-jssdk'));
-
-function getAppData() {
-    return data;
-}
 
 //SETUP
 function onInit() {
@@ -391,10 +392,6 @@ function onLoadMoreGifs() {
     //TODO:  create andother function that will Not clear , but Append to the curr Array
 }
 
-function onLangSelect(elLangSelect) {
-    // TODO: Let the user Select Language , then send to Service to save the Lang
-}
-
 function downloadCanvas(elLink) {
     gSelectedItem = null;
     renderBackgroundImage(image, ctx);
@@ -403,71 +400,4 @@ function downloadCanvas(elLink) {
     var imgContent = canvas.toDataURL('image/jpeg');
     elLink.href = imgContent;
 }
-
-
-
-
-
-
-
-// function uploadToCanvas() {
-//     var file = document.querySelector('input[type=file]').files[0];
-//     var reader = new FileReader();
-
-//     reader.addEventListener("load", function () {
-//         preview.src = reader.result;
-//     }, false);
-
-//     if (file) {
-//         reader.readAsDataURL(file);
-//     }
-// }
-
-// // on submit call to this function
-// function uploadImg(elForm, ev) {
-//     ev.preventDefault();
-
-//     document.getElementById('imgData').value = canvas.toDataURL("image/jpeg");
-
-//     // A function to be called if request succeeds
-//     function onSuccess(uploadedImgUrl) {
-//         console.log('uploadedImgUrl', uploadedImgUrl);
-
-//         uploadedImgUrl = encodeURIComponent(uploadedImgUrl)
-
-//     }
-//     doUploadImg(elForm, onSuccess);
-// }
-
-// function doUploadImg(elForm, onSuccess) {
-//     var formData = new FormData(elForm);
-
-//     fetch('http://ca-upload.com/here/upload.php', {
-//         method: 'POST',
-//         body: formData
-//     })
-//     .then(function (response) {
-//         return response.text()
-//     })
-//     .then(onSuccess)
-//     .catch(function (error) {
-//         console.error(error)
-//     })
-// }
-
-// function onFileInputChange(ev) {
-//     handleImageFromInput(ev, renderBackgroundImage)
-// }
-
-// function handleImageFromInput(ev, onImageReady) {
-//     // document.querySelector('.share-container').innerHTML = ''
-//     var reader = new FileReader();
-
-//     reader.onload = function (event) {
-//         var img = new Image();
-//         img.onload = onImageReady.bind(null, img)
-//         img.src = event.target.result;
-//     }
-//     reader.readAsDataURL(ev.target.files[0]);
-// }
 

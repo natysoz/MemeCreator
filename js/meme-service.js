@@ -3,12 +3,7 @@
 let gGifImages = [];
 let gRequest = 10;
 let gKeywords;
-let data = {
-    props: [
-        { line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40 },
-        { line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 390, },
-    ],
-};
+
 
 function getAPI() {
     return 'N9UIhNLVw7DiqthgNVHpBJkUGxrwkuxl';
