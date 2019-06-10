@@ -5,7 +5,7 @@ let image;
 let backgroundImage;
 let ctx;
 let isDraggable = false;
-let isText = true;
+let isText = true; // change to selecteDitem.src
 
 //Application Global Vars
 let gSelectedItem;
@@ -13,12 +13,20 @@ let gSelectedFont;
 let gSelectedColor;
 let gSelectedSize;
 let gIsEditing;
-let appData = {
-    props: [
-        { line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40 },
-        { line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 390, },
-    ],
-};
+let appData = getAppData();
+
+// // facebook api
+// (function(d, s, id) {
+//     var js, fjs = d.getElementsByTagName(s)[0];
+//     if (d.getElementById(id)) return;
+//     js = d.createElement(s); js.id = id;
+//     js.src = 'https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.0&appId=807866106076694&autoLogAppEvents=1';
+//     fjs.parentNode.insertBefore(js, fjs);
+//   }(document, 'script', 'facebook-jssdk'));
+
+function getAppData(){
+    return data;
+}
 
 //SETUP
 function onInit() {
@@ -41,43 +49,6 @@ function canvasSetup() {
     gSelectedItem = appData.props[1];
 }
 
-
-function onmoveLineLeftClick() {
-    gSelectedItem.x = gSelectedItem.x - 5;
-}
-
-function onmoveLineRightClick() {
-    gSelectedItem.x = gSelectedItem.x + 5;
-}
-
-function onmoveLineUpClick() {
-    gSelectedItem.y = gSelectedItem.y - 5;
-}
-
-function onmoveLineDownClick() {
-    gSelectedItem.y = gSelectedItem.y + 5;
-}
-
-function keyHandler(key) {
-    if (!gSelectedItem) return;
-    switch (key) {
-        case "ArrowUp":
-            onmoveLineUpClick();
-            break;
-
-        case "ArrowDown":
-            onmoveLineDownClick();
-            break;
-
-        case "ArrowRight":
-            onmoveLineRightClick();
-            break;
-
-        case "ArrowLeft":
-            onmoveLineLeftClick();
-            break;
-    }
-}
 
 
 function renderCanvas() {
@@ -406,63 +377,100 @@ function downloadCanvas(elLink) {
 
 
 
-function uploadToCanvas() {
-    var file = document.querySelector('input[type=file]').files[0];
-    var reader = new FileReader();
+// function uploadToCanvas() {
+//     var file = document.querySelector('input[type=file]').files[0];
+//     var reader = new FileReader();
 
-    reader.addEventListener("load", function () {
-        preview.src = reader.result;
-    }, false);
+//     reader.addEventListener("load", function () {
+//         preview.src = reader.result;
+//     }, false);
 
-    if (file) {
-        reader.readAsDataURL(file);
-    }
-}
+//     if (file) {
+//         reader.readAsDataURL(file);
+//     }
+// }
 
-// on submit call to this function
-function uploadImg(elForm, ev) {
-    ev.preventDefault();
+// // on submit call to this function
+// function uploadImg(elForm, ev) {
+//     ev.preventDefault();
 
-    document.getElementById('imgData').value = canvas.toDataURL("image/jpeg");
+//     document.getElementById('imgData').value = canvas.toDataURL("image/jpeg");
    
-    // A function to be called if request succeeds
-    function onSuccess(uploadedImgUrl) {
-        console.log('uploadedImgUrl', uploadedImgUrl);
+//     // A function to be called if request succeeds
+//     function onSuccess(uploadedImgUrl) {
+//         console.log('uploadedImgUrl', uploadedImgUrl);
 
-        uploadedImgUrl = encodeURIComponent(uploadedImgUrl)
+//         uploadedImgUrl = encodeURIComponent(uploadedImgUrl)
 
+//     }
+//     doUploadImg(elForm, onSuccess);
+// }
+
+// function doUploadImg(elForm, onSuccess) {
+//     var formData = new FormData(elForm);
+
+//     fetch('http://ca-upload.com/here/upload.php', {
+//         method: 'POST',
+//         body: formData
+//     })
+//     .then(function (response) {
+//         return response.text()
+//     })
+//     .then(onSuccess)
+//     .catch(function (error) {
+//         console.error(error)
+//     })
+// }
+
+// function onFileInputChange(ev) {
+//     handleImageFromInput(ev, renderBackgroundImage)
+// }
+
+// function handleImageFromInput(ev, onImageReady) {
+//     // document.querySelector('.share-container').innerHTML = ''
+//     var reader = new FileReader();
+
+//     reader.onload = function (event) {
+//         var img = new Image();
+//         img.onload = onImageReady.bind(null, img)
+//         img.src = event.target.result;
+//     }
+//     reader.readAsDataURL(ev.target.files[0]);
+// }
+
+function onmoveLineLeftClick() {
+    gSelectedItem.x = gSelectedItem.x - 5;
+}
+
+function onmoveLineRightClick() {
+    gSelectedItem.x = gSelectedItem.x + 5;
+}
+
+function onmoveLineUpClick() {
+    gSelectedItem.y = gSelectedItem.y - 5;
+}
+
+function onmoveLineDownClick() {
+    gSelectedItem.y = gSelectedItem.y + 5;
+}
+
+function keyHandler(key) {
+    if (!gSelectedItem) return;
+    switch (key) {
+        case "ArrowUp":
+            onmoveLineUpClick();
+            break;
+
+        case "ArrowDown":
+            onmoveLineDownClick();
+            break;
+
+        case "ArrowRight":
+            onmoveLineRightClick();
+            break;
+
+        case "ArrowLeft":
+            onmoveLineLeftClick();
+            break;
     }
-    doUploadImg(elForm, onSuccess);
-}
-
-function doUploadImg(elForm, onSuccess) {
-    var formData = new FormData(elForm);
-
-    fetch('http://ca-upload.com/here/upload.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(function (response) {
-        return response.text()
-    })
-    .then(onSuccess)
-    .catch(function (error) {
-        console.error(error)
-    })
-}
-
-function onFileInputChange(ev) {
-    handleImageFromInput(ev, renderBackgroundImage)
-}
-
-function handleImageFromInput(ev, onImageReady) {
-    // document.querySelector('.share-container').innerHTML = ''
-    var reader = new FileReader();
-
-    reader.onload = function (event) {
-        var img = new Image();
-        img.onload = onImageReady.bind(null, img)
-        img.src = event.target.result;
-    }
-    reader.readAsDataURL(ev.target.files[0]);
 }
