@@ -70,7 +70,7 @@ function renderCanvas() {
     if (isDraggable && !isText) {
         renderOutline();
     }
-    if (isDraggable && !isText) {
+    if (isDraggable && isText) {
         renderOutlineText();
     }
 }
