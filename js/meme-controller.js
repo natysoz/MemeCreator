@@ -401,7 +401,7 @@ function downloadCanvas() {
     // ctx.color = 'black';
     // ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    var image = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+    var image = canvas.toDataURL("image/jpg");
     window.location.href = image;
 }
 
