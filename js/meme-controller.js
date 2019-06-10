@@ -398,7 +398,10 @@ function onLangSelect(elLangSelect) {
 // TODO functions to push into SERVICE >>
 
 function downloadCanvas() {
-    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    // ctx.color = 'black';
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    var image = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
     window.location.href = image;
 }
 
