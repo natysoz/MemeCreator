@@ -19,7 +19,7 @@ let appData = {
         {line: 'sentence number 2', id: getRandomID(), font: 'impact', size: 30, align: 'center', color: 'white', strokeColor: 'black', x: 200, y: 485,},
     ],
 };
-
+var text;
 //SETUP
 function onInit() {
     canvasSetup();         // SETUP CANVAS
