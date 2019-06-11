@@ -403,9 +403,7 @@ function uploadToCanvas(ev) {
 }
 
 function handleImageFromInput(ev, onImageReady) {
-   // document.querySelector('.share-container').innerHTML = ''
     var reader = new FileReader();
-
     reader.onload = function (event) {
         var img = new Image();
         img.onload = onImageReady.bind(null, img)
