@@ -8,8 +8,14 @@
 
 }
 
-*:focus {
+
+input, select, textarea{
+    color: #212121;
+}
+input:focus{
     outline: none;
+}
+input:hover{
     color: white;
 }
 

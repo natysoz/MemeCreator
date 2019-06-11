@@ -13,6 +13,7 @@ let gSelectedColor;
 let gSelectedSize;
 let gIsEditing;
 
+let updateField;
 //transfer to Service
 let appData = {
     props: [
@@ -123,13 +124,13 @@ function renderBackgroundImage(img, ctx) {
 }
 
 
-function foo(){
-    var x = document.querySelector('#newText');
-    console.log(x)
+function updateTextFocus(){
+    updateField = document.querySelector('#newText');
+    updateField.focus();
+    console.log(updateField)
 }
 //CANVAS TOOLS
 function onItemSelect(x, y) {
-    foo();
     let sliderValue = document.querySelector(".slider");
     let currItem = appData.props.find(prop => {
         if (prop.src) {
@@ -251,8 +252,14 @@ function onTextEditing(input) {
     if (!gSelectedItem || gSelectedItem.src) return;
     gIsEditing = true;
     checkEditToggle();
-    document.querySelector('.text-button').classList.toggle('btn');
     gSelectedItem.line = input;
+}
+
+function onEnterKeyPress(e, textarea){
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if(code == 13) {
+        onTextAdd(textarea);
+    }
 }
 
 function checkEditToggle() {
@@ -262,7 +269,6 @@ function checkEditToggle() {
         p.classList.add('fa-check');
     }
     else {
-        document.querySelector('.text-button').classList.toggle('btn');
         p.classList.remove('fa-check');
         p.classList.add('fa-plus');
     }
@@ -294,6 +300,7 @@ function setMobileListeners() {
 
 function setMouseListeners() {
     canvas.onmousedown = e => {
+        updateTextFocus();
         onItemSelect(e.offsetX, e.offsetY);
     };
     canvas.onmousemove = e => {

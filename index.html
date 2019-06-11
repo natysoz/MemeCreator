@@ -55,12 +55,15 @@
         <a href="#" onclick="downloadCanvas(this)" download="my-img.jpg" class="fa fa-download" aria-hidden="true"></a>
     </div>
     <div class="flex canvas-container">
-        <canvas style="border: 3px dotted #dbdbdb" class="meme-canvas" id="canvas" width="400" height="475">
+        <canvas onclick="updateTextFocus()" style="border: 3px dotted #dbdbdb" class="meme-canvas" id="canvas" width="400" height="475">
         </canvas>
     </div>
     <div class="text-area">
-        <input id="newText" class="text-input" value="Add new Text" type="text" oninput="onTextEditing(this.value)">
-       <!-- <div class="text-button" onclick="onTextAdd(newText.value)"><i class="fas fa-plus"></i></div>-->
+        <input id="newText" class="text-input"
+               onKeyPress="onEnterKeyPress(event, this.value)"
+               onfocus="this.value = this.value;" value="Add new Text" type="text"
+               oninput="onTextEditing(this.value)">
+        <div class="text-button" onclick="onTextAdd(newText.value)"><i class="fas fa-plus"></i></div>
     </div>
     <div class="slide-container">
         <div class="slider-a-small">A</div>
