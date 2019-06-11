@@ -9,6 +9,15 @@ function renderGrid() {
     elGrid.innerHTML = gifHTML;
 }
 
+function renderProps(){
+    let elProps = document.querySelector('.emoji-container');
+    let elPropsHTML =``;
+    for (var i = 1;i<=18;i++){
+        elPropsHTML += `<div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/${i}.png"></div>`;
+    }
+    elProps.innerHTML = elPropsHTML;
+}
+
 function renderPopularSearchItems() {
     let keywords = loadFromStorage('keywords');
     if (!keywords || !keywords.length) {

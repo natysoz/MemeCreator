@@ -46,18 +46,11 @@ function redirectTo(url){
 }
 
 // 	Animations: while filtering the list....................................TODO DONE
-// 	Upload from device / camera.............................................IDO WIP
+// 	Upload from device / camera.............................................TODO DONE
 // 	Hexagons................................................................TODO UGLY NO!
 // 	Share on Facebook.......................................................NATY IDO
 // 	Allow switching the UI to hebrew........................................NATY WIP
 // 	Animations: When hovering an image zoom-in..............................TODO DONE
+// controller/MVC TODO
+// **brush  TODO
 
-//download
-// upload
-// controller/MVC
-// responsivit
-//
-// **brush
-// **FB
-// **contact
-// **i18n

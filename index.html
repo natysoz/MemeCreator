@@ -10,6 +10,8 @@
 </head>
 
 <body onload="onInit()" onkeydown="keyHandler(event.key)">
+
+<!-- gallery Started!-->
 <div class="burger" onclick="onToggleEditMode()"><i class="far fa-edit"></i></div>
 <div class="header flex">
     <h1>MeMe Creator!</h1>
@@ -32,11 +34,10 @@
 </section>
 <section class="gallery ">
     <div class="gallery-container grid">
+        <!-- Rendering!-->
     </div>
 </section>
-
-
-
+<!-- gallery over!-->
 
 
 <!--EDITOR MODAL!-->
@@ -78,10 +79,10 @@
         </nav>
 
         <nav class="navbar-fonts fonts-menu hide-modal">
-            <div class="roboto" onclick="onFontChange(this)"> Broadway </div>
-            <div class="arial" onclick="onFontChange(this)">  Arial    </div>
-            <div class="arimo" onclick="onFontChange(this)">  Aharoni  </div>
-            <div class="impact" onclick="onFontChange(this)"> Impact   </div>
+            <div class="broadway" onclick="onFontChange(this)"> broadway </div>
+            <div class="arial" onclick="onFontChange(this)">  arial    </div>
+            <div class="aharoni" onclick="onFontChange(this)">  Aharoni  </div>
+            <div class="impact" onclick="onFontChange(this)"> impact   </div>
         </nav>
     </div>
 </section>
@@ -92,23 +93,7 @@
 <div class="main-navbar-symbols props-menu hide-modal">
     <div class="flex center">
         <div class="emoji-container">
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/1.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/2.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/3.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/4.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/5.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/6.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/7.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/8.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/9.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/11.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/12.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/13.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/14.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/15.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/16.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/17.png"></div>
-            <div class="prop-item" data-name="glass" onclick="onPropAdd(this)"><img src="source/props/18.png"></div>
+            <!-- Rendering!-->
         </div>
     </div>
 </div>
@@ -117,8 +102,7 @@
 
 <!-- UTILS!-->
 <div class="flex results hide">No Results</div>
-<img id="background" style="display: none;" src="source/example.gif">
-<img id="exmImg" src="https://media3.giphy.com/media/csWJHP7JTRqwhbft3X/giphy.gif?cid=bd2841915cfa552f7169746a6ff28e5c&rid=giphy.gif">
+<img id="background" style="display: none;" src="source/upload-me.jpg">
 <!-- UTILS! END -->
 
 <script src="lib/picker.js" type="text/javascript"></script>

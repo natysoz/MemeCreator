@@ -202,7 +202,7 @@ div > img {
 
 .fonts-menu > div:hover {
     background-color: #2196f3;
-    font-size: 2rem;
+    font-size: 1.35rem;
     color: white;
     cursor: pointer;
 }
@@ -456,8 +456,8 @@ div > img {
     display: none;
 }
 
-.roboto {
-    font-family: Roboto, serif;
+.broadway {
+    font-family: Broadway, serif;
 }
 
 .arial {
@@ -468,8 +468,8 @@ div > img {
     font-family: Impact, serif;
 }
 
-.arimo {
-    font-family: Arimo, serif;
+.aharoni {
+    font-family: Aharoni, serif;
 }
 
 

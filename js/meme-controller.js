@@ -1,17 +1,19 @@
 'user strict';
 
+//DOM GLOBAL
 let canvas;
 let image;
-let backgroundImage;
 let ctx;
-let isDraggable = false;
 
 //Application Global Vars
+let gIsDraggable = false;
 let gSelectedItem;
 let gSelectedFont;
 let gSelectedColor;
 let gSelectedSize;
 let gIsEditing;
+
+//transfer to Service
 let appData = {
     props: [
         { line: 'What do u wanna say', id: getRandomID(), font: 'impact', size: 40, align: 'left', color: 'white', strokeColor: 'black', x: 200, y: 40 },
@@ -21,33 +23,30 @@ let appData = {
 
 //SETUP
 function onInit() {
-    canvasSetup();         // SETUP CANVAS
-    setEventListeners();   // LISTEN!
-    renderCanvas();   // Render Items
+    renderProps();
+    canvasSetup();
+    setEventListeners();
+    renderCanvas();
     onColorChange();
     renderPopularSearchItems();
 }
 
 function canvasSetup() {
     canvas = document.querySelector('#canvas');
-    if (isMobileDevice()){
-        canvas.width = 325;
-        canvas.height = 325;
-    }
-    else {
-        canvas.width = 400;
-        canvas.height = 500;
-    }
     image = document.querySelector('#background');
-    backgroundImage = document.querySelector('#background');
     ctx = canvas.getContext("2d");
     gSelectedItem = appData.props[0];
     gSelectedFont = 'Impact';
     gSelectedColor = 'white';
     gSelectedSize = '40';
-    gSelectedItem = appData.props[1];
+    if (isMobileDevice()){canvas.width = 325;canvas.height = 325;}
+    else {canvas.width = 400;canvas.height = 500;}
 }
 
+function setEventListeners() {
+    setMouseListeners();
+    setMobileListeners();
+}
 
 function renderCanvas() {
     window.requestAnimationFrame(() => {
@@ -61,7 +60,6 @@ function renderCanvas() {
 
 //RENDERS
 function renderCanvasProps() {
-    //TODO Render with ForEach
     appData.props.forEach(item => {
         if (item.src) {
             renderProp(item.src, item.x, item.y, item.size, item.size);
@@ -69,10 +67,10 @@ function renderCanvasProps() {
             renderText(item, item.x, item.y);
         }
     });
-    if (isDraggable && !gSelectedItem.src) {
+    if (gIsDraggable && !gSelectedItem.src) {
         renderOutline();
     }
-    if (isDraggable && gSelectedItem.src) {
+    if (gIsDraggable && gSelectedItem.src) {
         renderOutlineText();
     }
 }
@@ -142,7 +140,7 @@ function onItemSelect(x, y) {
         return;
     }
 
-    isDraggable = true;
+    gIsDraggable = true;
     gSelectedItem = currItem;
     updateTextField(currItem.line);
     console.log('Selected is:', gSelectedItem);
@@ -253,7 +251,6 @@ function onTextEditing(input) {
 }
 
 function checkEditToggle() {
-    console.log('checking')
     let p = document.querySelector('.text-button').firstChild;
     if (gIsEditing) {
         p.classList.remove('fa-plus');
@@ -267,17 +264,12 @@ function checkEditToggle() {
 }
 
 //LISTENERS
-function setEventListeners() {
-    setMouseListeners();
-    setMobileListeners();
-}
-
 function setMobileListeners() {
     canvas.ontouchstart = e => {
         onItemSelect(e.offsetX, e.offsetY);
     };
     canvas.ontouchmove = e => {
-        if (isDraggable) {
+        if (gIsDraggable) {
             if (gSelectedItem.src) {
                 gSelectedItem.x = e.offsetX - gSelectedItem.size / 2;
                 gSelectedItem.y = e.offsetY - gSelectedItem.size / 2;
@@ -288,10 +280,10 @@ function setMobileListeners() {
         }
     };
     canvas.ontouchend = () => {
-        isDraggable = false;
+        gIsDraggable = false;
     };
     canvas.ontouchcancel = () => {
-        isDraggable = false;
+        gIsDraggable = false;
     };
 }
 
@@ -300,7 +292,7 @@ function setMouseListeners() {
         onItemSelect(e.offsetX, e.offsetY);
     };
     canvas.onmousemove = e => {
-        if (isDraggable) {
+        if (gIsDraggable) {
             if (gSelectedItem.src) {
                 gSelectedItem.x = e.offsetX - gSelectedItem.size / 2;
                 gSelectedItem.y = e.offsetY - gSelectedItem.size / 2;
@@ -311,10 +303,10 @@ function setMouseListeners() {
         }
     };
     canvas.onmouseup = () => {
-        isDraggable = false;
+        gIsDraggable = false;
     };
     canvas.onmouseout = () => {
-        isDraggable = false;
+        gIsDraggable = false;
     };
 }
 
@@ -364,7 +356,6 @@ function onSelectImage(elGifSelect) {
 function onPropsMenu() {
     let propsMenu = document.querySelector('.props-menu');
     propsMenu.classList.toggle('hide-modal');
-    console.log(propsMenu)
 }
 
 function onFontsMenu() {

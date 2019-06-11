@@ -76,7 +76,7 @@ function pushNewKeyword(searchTerm) {
     }
     saveKeywords()
 }
-// TODO MORE FEATURES
+
 function onLoadMoreGifs() {
     //TODO:  create andother function that will Not clear , but Append to the curr Array
 }
