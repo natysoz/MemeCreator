@@ -210,6 +210,7 @@ function onTextAdd(text) {
             color: gSelectedColor, strokeColor: 'black', x: 200, y: 200,
         }
     );
+    gSelectedItem = appData.props[appData.props.length-1];
     checkEditToggle();
 }
 
@@ -239,6 +240,8 @@ function propAdd(name, src) {
             y: 0,
         }
     )
+    gSelectedItem = appData.props[appData.props.length-1];
+
 }
 
 function updateTextField(txt) {
