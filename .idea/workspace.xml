@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="Upload download Finished&#10;Css improvement&#10;Need to fix MVC model more">
+    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/meme-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/meme-controller.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="486">
+              <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -30,11 +29,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+            <state relative-caret-position="433">
+              <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
               <folding>
                 <element signature="e#244#577#0" />
                 <element signature="e#257#574#0" />
+                <element signature="e#606#745#0" />
                 <element signature="e#770#1149#0" />
                 <element signature="e#1180#1234#0" />
                 <element signature="e#1260#1462#0" />
@@ -50,7 +50,13 @@
                 <element signature="e#2658#2705#0" />
                 <element signature="e#2738#2980#0" />
                 <element signature="e#3023#3483#0" />
-                <element signature="e#4287#4342#0" />
+                <element signature="e#3500#3508#0" />
+                <element signature="e#3528#4373#0" />
+                <element signature="e#3750#4134#0" />
+                <element signature="e#3774#3887#0" />
+                <element signature="e#3893#4128#0" />
+                <element signature="e#4156#4234#0" />
+                <element signature="e#4403#4458#0" />
                 <element signature="e#4400#4627#0" />
                 <element signature="e#4518#4580#0" />
                 <element signature="e#4654#5414#0" />
@@ -58,9 +64,6 @@
                 <element signature="e#4905#5186#0" />
                 <element signature="e#5241#5411#0" />
                 <element signature="e#5444#5605#0" />
-                <element signature="e#5632#6105#0" />
-                <element signature="e#5677#5810#0" />
-                <element signature="e#5874#6073#0" />
                 <element signature="e#6132#6237#0" />
                 <element signature="e#6263#6471#0" />
                 <element signature="e#6349#6401#0" />
@@ -68,9 +71,6 @@
                 <element signature="e#6535#6695#0" />
                 <element signature="e#6735#6894#0" />
                 <element signature="e#6926#7128#0" />
-                <element signature="e#7157#7492#0" />
-                <element signature="e#7242#7325#0" />
-                <element signature="e#7335#7490#0" />
                 <element signature="e#7536#8191#0" />
                 <element signature="e#7569#7620#0" />
                 <element signature="e#7652#8047#0" />
@@ -147,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="360">
+              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -177,14 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.navbar-fonts</find>
-      <find>canvasSetup</find>
-      <find>.main-navbar-symbols</find>
-      <find>canvas</find>
-      <find>REQUEST</find>
-      <find>renderCanvas</find>
-      <find>backgroundImage</find>
-      <find>setEventListeners</find>
       <find>conso</find>
       <find>onColorChange</find>
       <find>appData</find>
@@ -199,14 +191,22 @@
       <find>onFontsMenu</find>
       <find>navbar</find>
       <find>ah</find>
-      <find>.canvas-container</find>
       <find>upload</find>
-      <find>focus</find>
       <find>oninput</find>
       <find>onTextEditing</find>
-      <find>text-button</find>
-      <find>onItemSelect</find>
+      <find>.canvas-container</find>
+      <find>onfocus=&quot;this.value = this.value;&quot;</find>
+      <find>focus</find>
       <find>newText</find>
+      <find>onItemSelect</find>
+      <find>canvas</find>
+      <find>text-area</find>
+      <find>text-button</find>
+      <find>foo</find>
+      <find>btn</find>
+      <find>enter</find>
+      <find>updateTextFocus</find>
+      <find>checkEditToggle</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -337,21 +337,7 @@
       <workItem from="1560011465572" duration="60449000" />
       <workItem from="1560157565329" duration="3882000" />
       <workItem from="1560179652625" duration="14664000" />
-      <workItem from="1560232030590" duration="3874000" />
-    </task>
-    <task id="LOCAL-00005" summary="Adding some more TODOS">
-      <created>1559840663278</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1559840663278</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Reset Search Bars">
-      <created>1559840871636</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1559840871636</updated>
+      <workItem from="1560232030590" duration="6173000" />
     </task>
     <task id="LOCAL-00007" summary="Reset Search Bars">
       <created>1559846590723</created>
@@ -682,11 +668,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560240503562</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fixing auto text edit">
+      <created>1560262504801</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1560262504801</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fixing auto text edit&#10;*user now can press enter to save&#10;auto focus to text area">
+      <created>1560264547705</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1560264547705</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171353000" />
+    <option name="totallyTimeSpent" value="173652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -717,8 +717,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update TODO List&#10;Wip Edit Mode" />
-    <MESSAGE value="Wip Canvas" />
     <MESSAGE value="Update Services" />
     <MESSAGE value="Update before Merge" />
     <MESSAGE value="Keywords Almost Finished" />
@@ -742,7 +740,9 @@
     <MESSAGE value="*remove manual moving tools&#10;*all tools work on all item types&#10;*Added image Outlines&#10;*missing TEXT outline&#10;*Add 18 Prop Items" />
     <MESSAGE value="fix some more css stuff" />
     <MESSAGE value="Upload download Finished&#10;Css improvement&#10;Need to fix MVC model more" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload download Finished&#10;Css improvement&#10;Need to fix MVC model more" />
+    <MESSAGE value="fixing auto text edit" />
+    <MESSAGE value="fixing auto text edit&#10;*user now can press enter to save&#10;auto focus to text area" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing auto text edit&#10;*user now can press enter to save&#10;auto focus to text area" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/user-dashboard.css" />
@@ -821,15 +821,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="486">
+          <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -839,11 +839,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        <state relative-caret-position="433">
+          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
           <folding>
             <element signature="e#244#577#0" />
             <element signature="e#257#574#0" />
+            <element signature="e#606#745#0" />
             <element signature="e#770#1149#0" />
             <element signature="e#1180#1234#0" />
             <element signature="e#1260#1462#0" />
@@ -859,7 +860,13 @@
             <element signature="e#2658#2705#0" />
             <element signature="e#2738#2980#0" />
             <element signature="e#3023#3483#0" />
-            <element signature="e#4287#4342#0" />
+            <element signature="e#3500#3508#0" />
+            <element signature="e#3528#4373#0" />
+            <element signature="e#3750#4134#0" />
+            <element signature="e#3774#3887#0" />
+            <element signature="e#3893#4128#0" />
+            <element signature="e#4156#4234#0" />
+            <element signature="e#4403#4458#0" />
             <element signature="e#4400#4627#0" />
             <element signature="e#4518#4580#0" />
             <element signature="e#4654#5414#0" />
@@ -867,9 +874,6 @@
             <element signature="e#4905#5186#0" />
             <element signature="e#5241#5411#0" />
             <element signature="e#5444#5605#0" />
-            <element signature="e#5632#6105#0" />
-            <element signature="e#5677#5810#0" />
-            <element signature="e#5874#6073#0" />
             <element signature="e#6132#6237#0" />
             <element signature="e#6263#6471#0" />
             <element signature="e#6349#6401#0" />
@@ -877,9 +881,6 @@
             <element signature="e#6535#6695#0" />
             <element signature="e#6735#6894#0" />
             <element signature="e#6926#7128#0" />
-            <element signature="e#7157#7492#0" />
-            <element signature="e#7242#7325#0" />
-            <element signature="e#7335#7490#0" />
             <element signature="e#7536#8191#0" />
             <element signature="e#7569#7620#0" />
             <element signature="e#7652#8047#0" />

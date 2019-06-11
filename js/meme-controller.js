@@ -125,9 +125,9 @@ function renderBackgroundImage(img, ctx) {
 
 
 function updateTextFocus(){
+    if(!gSelectedItem)return
     updateField = document.querySelector('#newText');
     updateField.focus();
-    console.log(updateField)
 }
 //CANVAS TOOLS
 function onItemSelect(x, y) {
