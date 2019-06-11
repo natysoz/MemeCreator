@@ -68,6 +68,7 @@ div > img {
 }
 
 .canvas-container {
+    margin-top:4px;
     height: 65.5vh;
 }
 
