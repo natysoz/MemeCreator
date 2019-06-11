@@ -122,10 +122,15 @@ function renderBackgroundImage(img, ctx) {
     ctx.drawImage(img, 0, 0, img.width, img.height, centerAxisX, centerAxisY, img.width * ratio, img.height * ratio);
 }
 
+
+function foo(){
+    var x = document.querySelector('#newText');
+    console.log(x)
+}
 //CANVAS TOOLS
 function onItemSelect(x, y) {
+    foo();
     let sliderValue = document.querySelector(".slider");
-
     let currItem = appData.props.find(prop => {
         if (prop.src) {
             return (x >= prop.x && x <= prop.x + prop.size && y >= prop.y && y <= prop.y + prop.size)
@@ -140,9 +145,6 @@ function onItemSelect(x, y) {
         onInputFinish();
         return;
     }
-    let z = document.getElementById("#newText");
-    console.log(z)
-    z.focus();
     gIsDraggable = true;
     gSelectedItem = currItem;
     updateTextField(currItem.line);

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="">
+    <list default="true" id="8b6683ab-4faf-4d83-8cd3-fa72f1dba5df" name="Default Changelist" comment="Upload download Finished&#10;Css improvement&#10;Need to fix MVC model more">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/meme-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/meme-controller.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+            <state relative-caret-position="335">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -29,12 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
+            <state relative-caret-position="426">
+              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
               <folding>
                 <element signature="e#244#577#0" />
                 <element signature="e#257#574#0" />
-                <element signature="e#606#745#0" />
                 <element signature="e#770#1149#0" />
                 <element signature="e#1180#1234#0" />
                 <element signature="e#1260#1462#0" />
@@ -177,12 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>med</find>
-      <find>ontouchmove</find>
-      <find>roboto</find>
-      <find>onPropsMenu</find>
-      <find>main-navbar-symbols</find>
-      <find>main-navbar-symbols props-menu</find>
       <find>.navbar-fonts</find>
       <find>canvasSetup</find>
       <find>.main-navbar-symbols</find>
@@ -205,8 +199,14 @@
       <find>onFontsMenu</find>
       <find>navbar</find>
       <find>ah</find>
-      <find>upload</find>
       <find>.canvas-container</find>
+      <find>upload</find>
+      <find>focus</find>
+      <find>oninput</find>
+      <find>onTextEditing</find>
+      <find>text-button</find>
+      <find>onItemSelect</find>
+      <find>newText</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -237,8 +237,8 @@
         <option value="$PROJECT_DIR$/js/todos.js" />
         <option value="$PROJECT_DIR$/js/meme-service.js" />
         <option value="$PROJECT_DIR$/js/meme-render-service.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/meme-controller.js" />
       </list>
     </option>
@@ -337,14 +337,7 @@
       <workItem from="1560011465572" duration="60449000" />
       <workItem from="1560157565329" duration="3882000" />
       <workItem from="1560179652625" duration="14664000" />
-      <workItem from="1560232030590" duration="2098000" />
-    </task>
-    <task id="LOCAL-00004" summary="Adding some more TODOS">
-      <created>1559840555137</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1559840555137</updated>
+      <workItem from="1560232030590" duration="3874000" />
     </task>
     <task id="LOCAL-00005" summary="Adding some more TODOS">
       <created>1559840663278</created>
@@ -682,18 +675,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560232755897</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Upload download Finished&#10;Css improvement&#10;Need to fix MVC model more">
+      <created>1560240503562</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1560240503562</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169577000" />
+    <option name="totallyTimeSpent" value="171353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4907909" visible="true" weight="0.22023182" />
-      <window_info id="Structure" order="1" sideWeight="0.5092091" side_tool="true" visible="true" weight="0.22023182" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49124423" visible="true" weight="0.16469662" />
+      <window_info id="Structure" order="1" sideWeight="0.50875574" side_tool="true" visible="true" weight="0.16469662" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.17537023" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -704,7 +704,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49966997" weight="0.1543258" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49966997" visible="true" weight="0.1543258" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50033003" side_tool="true" weight="0.15492958" />
       <window_info anchor="bottom" id="GraphQL" order="12" />
@@ -783,17 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/meme-util-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -837,14 +826,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/meme-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
+        <state relative-caret-position="426">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
           <folding>
             <element signature="e#244#577#0" />
             <element signature="e#257#574#0" />
-            <element signature="e#606#745#0" />
             <element signature="e#770#1149#0" />
             <element signature="e#1180#1234#0" />
             <element signature="e#1260#1462#0" />
